@@ -1,6 +1,9 @@
-# Cursor AI Downloads Tracker  (Node.js)
+# Cursor AI Downloads Tracker (Node.js)
 
 <div align="center">
+ <p align="center">
+  <a href="https://cursorhistory.com" target="_blank"><img alt="Visit Cursor History Website" src="https://img.shields.io/badge/🌐_Visit_Cursor_History_Website-0078D7?style=for-the-badge&logo=cursor&logoColor=white"></a>
+ </p>
  <p align="center">
   <a href="./README.md"><img alt="README in English" src="https://img.shields.io/badge/English-d9d9d9"></a>
   <a href="./README_CN.md"><img alt="简体中文" src="https://img.shields.io/badge/简体中文-d9d9d9"></a>
@@ -54,6 +57,8 @@ Below are the official download links for various versions of Cursor AI, present
 
 ## Latest Version Card
 
+
+<!-- LATEST_VERSION_CARD_START -->
 <div align="center">
 <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
 
@@ -81,10 +86,12 @@ Below are the official download links for various versions of Cursor AI, present
 </div>
 </div>
 </div>
+<!-- LATEST_VERSION_CARD_END -->
 
 ## All Versions Download Table
 
 <div align="center">
+<!-- VERSION_TABLE_START -->
 <table style="width: 100%; border-collapse: collapse;">
   <tr style="background-color: #f8f9fa;">
     <th style="text-align: center; vertical-align: middle; padding: 10px;">Version</th>
@@ -507,9 +514,13 @@ Below are the official download links for various versions of Cursor AI, present
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://storage.googleapis.com/cursor-history-exe/v0.36.2/linux/x64/Cursor-0.36.2.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a></td>
     </tr>
 </table>
+<!-- VERSION_TABLE_END -->
 </div>
 
 ## Detailed Version Card View
+
+
+<!-- DETAILED_CARDS_START -->
 
 <details>
 <summary><b>Version 0.47.8</b> (2025-03-20)</summary>
@@ -1672,3 +1683,4 @@ Below are the official download links for various versions of Cursor AI, present
 </div>
 </details>
 
+<!-- DETAILED_CARDS_END -->

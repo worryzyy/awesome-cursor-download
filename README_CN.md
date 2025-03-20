@@ -2,11 +2,13 @@
 
 <div align="center">
 <p align="center">
+  <a href="https://cn.cursorhistory.com" target="_blank"><img alt="访问Cursor历史版本网站" src="https://img.shields.io/badge/🌐_访问Cursor历史版本网站-0078D7?style=for-the-badge&logo=cursor&logoColor=white"></a>
+</p>
+<p align="center">
   <a href="./README.md"><img alt="README in English" src="https://img.shields.io/badge/English-d9d9d9"></a>
   <a href="./README_CN.md"><img alt="简体中文" src="https://img.shields.io/badge/简体中文-d9d9d9"></a>
 </p>
 </div>
-
 
 这个项目是 Cursor AI 下载链接的追踪器，使用 Node.js 实现。它会收集和维护 Cursor AI 编辑器的各个版本的官方下载链接，并将这些链接整理后显示在 README.md 文件中。
 
@@ -55,6 +57,8 @@ npm run update
 
 ## 最新版本卡片
 
+
+<!-- LATEST_VERSION_CARD_START -->
 <div align="center">
 <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
 
@@ -82,10 +86,12 @@ npm run update
 </div>
 </div>
 </div>
+<!-- LATEST_VERSION_CARD_END -->
 
 ## 所有版本下载表格
 
 <div align="center">
+<!-- VERSION_TABLE_START -->
 <table style="width: 100%; border-collapse: collapse;">
   <tr style="background-color: #f8f9fa;">
     <th style="text-align: center; vertical-align: middle; padding: 10px;">版本</th>
@@ -508,9 +514,13 @@ npm run update
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://storage.googleapis.com/cursor-history-exe/v0.36.2/linux/x64/Cursor-0.36.2.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a></td>
     </tr>
 </table>
+<!-- VERSION_TABLE_END -->
 </div>
 
 ## 详细版本卡片视图
+
+
+<!-- DETAILED_CARDS_START -->
 
 <details>
 <summary><b>版本 0.47.8</b> (2025-03-20)</summary>
@@ -1673,3 +1683,4 @@ npm run update
 </div>
 </details>
 
+<!-- DETAILED_CARDS_END -->
