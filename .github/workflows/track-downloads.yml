@@ -1,9 +1,9 @@
-name: Track Cursor Downloads
+name: Track Cursor Version Downloads
 
 on:
   schedule:
-    # 每天运行4次 (UTC时间 0, 6, 12, 18点，对应北京时间 8, 14, 20, 2点)
-    - cron: "0 0,6,12,18 * * *"
+    # 每两小时运行一次 (每偶数小时整点)
+    - cron: "0 */2 * * *"
   # 也允许手动触发
   workflow_dispatch:
 
@@ -37,4 +37,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Cursor download links [automated]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(downloads): update Cursor version download links [bot]" && git push)
