@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript build output
+dist/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment and config files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db 

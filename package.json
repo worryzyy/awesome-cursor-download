@@ -1,0 +1,23 @@
+{
+  "name": "cursor-ver-dl",
+  "version": "0.0.1",
+  "description": "Automatically tracks and updates Cursor download links using Node.js",
+  "main": "dist/track-downloads.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/track-downloads.js",
+    "update": "node dist/track-downloads.js --force",
+    "migrate": "node dist/migrate-history.js",
+    "setup": "npm run build && npm run migrate",
+    "init": "node init.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.80",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}
