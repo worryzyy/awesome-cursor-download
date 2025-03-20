@@ -85,7 +85,7 @@ async function extractVersion(url: string): Promise<string> {
   const linuxMatch = url.match(/Cursor-([0-9.]+)-/);
   if (linuxMatch && linuxMatch[1]) return linuxMatch[1];
   
-  // For Mac - 尝试匹配 darwin/universal/Cursor-darwin-universal-version.dmg 模式
+  // For Mac - 匹配 darwin/universal/Cursor-darwin-universal-version.dmg 模式
   const macVersionMatch = url.match(/darwin\/[^\/]+\/Cursor-darwin-[^-]+-([0-9.]+)\.dmg/);
   if (macVersionMatch && macVersionMatch[1]) {
     return macVersionMatch[1];
@@ -236,419 +236,320 @@ function updateReadmeWithLinks(history: VersionHistory): void {
     return dateB - dateA;
   });
   
-  // 创建英文版 README 内容
-  let englishContent = `# Cursor AI Downloads Tracker  (Node.js)
-
-<div align="center">
- <p align="center">
-  <a href="./README.md"><img alt="README in English" src="https://img.shields.io/badge/English-d9d9d9"></a>
-  <a href="./README_CN.md"><img alt="简体中文" src="https://img.shields.io/badge/简体中文-d9d9d9"></a>
-</p>
-</div>
-
-This project is a download link tracker for Cursor AI, implemented in Node.js. It collects and maintains official download links for all versions of the Cursor AI editor and displays them in an organized manner in the README.md file.
-
-## Features
-
-- Automatically fetches latest download links for Cursor AI editor across different platforms (Windows, Mac, Linux) and architectures (x64, arm64, etc.)
-- Maintains a history of download links for all versions
-- Automatically updates the download link tables
-
-## Usage
-
-### Install Dependencies
-
-\`\`\`bash
-npm install
-\`\`\`
-
-### Compile
-
-\`\`\`bash
-npm run build
-\`\`\`
-
-### Run
-
-\`\`\`bash
-npm start
-\`\`\`
-
-Or
-
-\`\`\`bash
-npm run update
-\`\`\`
-
-## File Description
-
-- \`scripts/track-downloads.ts\`: Main script responsible for fetching latest links and updating history
-- \`scripts/migrate-history.ts\`: Helper script for migrating version history
-- \`cursor-version-archive.json\`: Stores download link history for all versions
-- \`README.md\`: Contains tables of download links
-
-## Cursor AI Download Links
-
-Below are the official download links for various versions of Cursor AI, presented in multiple views for your convenience.
-
-## Latest Version Card
-
-<div align="center">
-<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-`;
-
-  // 创建中文版 README 内容
-  let chineseContent = `# Cursor AI 下载链接追踪器 (Node.js 版)
-
-<div align="center">
-<p align="center">
-  <a href="./README.md"><img alt="README in English" src="https://img.shields.io/badge/English-d9d9d9"></a>
-  <a href="./README_CN.md"><img alt="简体中文" src="https://img.shields.io/badge/简体中文-d9d9d9"></a>
-</p>
-</div>
-
-
-这个项目是 Cursor AI 下载链接的追踪器，使用 Node.js 实现。它会收集和维护 Cursor AI 编辑器的各个版本的官方下载链接，并将这些链接整理后显示在 README.md 文件中。
-
-## 功能
-
-- 自动获取 Cursor AI 编辑器在不同平台（Windows、Mac、Linux）和架构（x64、arm64 等）的最新版本下载链接
-- 维护所有版本的下载链接历史记录
-- 自动更新包含下载链接的表格
-
-## 使用方法
-
-### 安装依赖
-
-\`\`\`bash
-npm install
-\`\`\`
-
-### 编译
-
-\`\`\`bash
-npm run build
-\`\`\`
-
-### 运行
-
-\`\`\`bash
-npm start
-\`\`\`
-
-或者
-
-\`\`\`bash
-npm run update
-\`\`\`
-
-## 文件说明
-
-- \`scripts/track-downloads.ts\`: 主要脚本，负责获取最新链接并更新历史记录
-- \`scripts/migrate-history.ts\`: 用于迁移版本历史记录的辅助脚本
-- \`cursor-version-archive.json\`: 存储所有版本的下载链接历史
-- \`README.md\`: 包含所有版本下载链接的表格
-
-## Cursor AI 下载链接
-
-下面提供了 Cursor AI 各版本的官方下载链接，多种视图方便您选择合适的版本。
-
-## 最新版本卡片
-
-<div align="center">
-<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-`;
-
-  // 最新版本卡片 - 两种语言
-  const latestVersion = sortedVersions[0];
-  if (latestVersion) {
-    // 英文版卡片
-    englishContent += `
-<div style="background-color: #f8f9fa; border-radius: 10px; padding: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <h3 style="text-align: center; margin-top: 0;">🚀 Cursor ${latestVersion.version}</h3>
-  <p style="text-align: center; color: #666; margin-bottom: 15px;">Release Date: ${latestVersion.date}</p>
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <div style="text-align: center; margin: 5px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></h4>
-      ${latestVersion.platforms['windows'] ? `<a href="${latestVersion.platforms['windows'].url}"><img src="https://img.shields.io/badge/x64-Download-blue?style=flat-square" alt="Windows x64"></a><br>` : ''}
-      ${latestVersion.platforms['windows_arm64'] ? `<a href="${latestVersion.platforms['windows_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-Download-blue?style=flat-square" alt="Windows ARM64"></a>` : ''}
-    </div>
-    <div style="text-align: center; margin: 5px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS"></h4>
-      ${latestVersion.platforms['mac'] ? `<a href="${latestVersion.platforms['mac'].url}"><img src="https://img.shields.io/badge/Universal-Download-black?style=flat-square" alt="macOS Universal"></a><br>` : ''}
-      ${latestVersion.platforms['mac_intel'] ? `<a href="${latestVersion.platforms['mac_intel'].url}"><img src="https://img.shields.io/badge/Intel-Download-black?style=flat-square" alt="macOS Intel"></a><br>` : ''}
-      ${latestVersion.platforms['mac_arm64'] ? `<a href="${latestVersion.platforms['mac_arm64'].url}"><img src="https://img.shields.io/badge/M_Chip-Download-black?style=flat-square" alt="macOS M1/M2/M3"></a>` : ''}
-    </div>
-    <div style="text-align: center; margin: 5px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></h4>
-      ${latestVersion.platforms['linux'] ? `<a href="${latestVersion.platforms['linux'].url}"><img src="https://img.shields.io/badge/x64-Download-yellow?style=flat-square" alt="Linux x64"></a><br>` : ''}
-      ${latestVersion.platforms['linux_arm64'] ? `<a href="${latestVersion.platforms['linux_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-Download-yellow?style=flat-square" alt="Linux ARM64"></a>` : ''}
-    </div>
-  </div>
-</div>`;
-
-    // 中文版卡片
-    chineseContent += `
-<div style="background-color: #f8f9fa; border-radius: 10px; padding: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <h3 style="text-align: center; margin-top: 0;">🚀 Cursor ${latestVersion.version}</h3>
-  <p style="text-align: center; color: #666; margin-bottom: 15px;">发布日期: ${latestVersion.date}</p>
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <div style="text-align: center; margin: 5px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></h4>
-      ${latestVersion.platforms['windows'] ? `<a href="${latestVersion.platforms['windows'].url}"><img src="https://img.shields.io/badge/x64-下载-blue?style=flat-square" alt="Windows x64"></a><br>` : ''}
-      ${latestVersion.platforms['windows_arm64'] ? `<a href="${latestVersion.platforms['windows_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-下载-blue?style=flat-square" alt="Windows ARM64"></a>` : ''}
-    </div>
-    <div style="text-align: center; margin: 5px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS"></h4>
-      ${latestVersion.platforms['mac'] ? `<a href="${latestVersion.platforms['mac'].url}"><img src="https://img.shields.io/badge/通用-下载-black?style=flat-square" alt="macOS Universal"></a><br>` : ''}
-      ${latestVersion.platforms['mac_intel'] ? `<a href="${latestVersion.platforms['mac_intel'].url}"><img src="https://img.shields.io/badge/Intel-下载-black?style=flat-square" alt="macOS Intel"></a><br>` : ''}
-      ${latestVersion.platforms['mac_arm64'] ? `<a href="${latestVersion.platforms['mac_arm64'].url}"><img src="https://img.shields.io/badge/M芯片-下载-black?style=flat-square" alt="macOS M1/M2/M3"></a>` : ''}
-    </div>
-    <div style="text-align: center; margin: 5px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></h4>
-      ${latestVersion.platforms['linux'] ? `<a href="${latestVersion.platforms['linux'].url}"><img src="https://img.shields.io/badge/x64-下载-yellow?style=flat-square" alt="Linux x64"></a><br>` : ''}
-      ${latestVersion.platforms['linux_arm64'] ? `<a href="${latestVersion.platforms['linux_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-下载-yellow?style=flat-square" alt="Linux ARM64"></a>` : ''}
-    </div>
-  </div>
-</div>`;
-  }
-
-  // 表格头部 - 两种语言
-  englishContent += `
-</div>
-</div>
-
-## All Versions Download Table
-
-<div align="center">
-<table style="width: 100%; border-collapse: collapse;">
-  <tr style="background-color: #f8f9fa;">
-    <th style="text-align: center; vertical-align: middle; padding: 10px;">Version</th>
-    <th style="text-align: center; vertical-align: middle; padding: 10px;">Date</th>
-    <th style="text-align: center; vertical-align: middle; padding: 10px;">Windows</th>
-    <th style="text-align: center; vertical-align: middle; padding: 10px;">macOS</th>
-    <th style="text-align: center; vertical-align: middle; padding: 10px;">Linux</th>
-  </tr>
-`;
-
-  chineseContent += `
-</div>
-</div>
-
-## 所有版本下载表格
-
-<div align="center">
-<table style="width: 100%; border-collapse: collapse;">
-  <tr style="background-color: #f8f9fa;">
-    <th style="text-align: center; vertical-align: middle; padding: 10px;">版本</th>
-    <th style="text-align: center; vertical-align: middle; padding: 10px;">日期</th>
-    <th style="text-align: center; vertical-align: middle; padding: 10px;">Windows</th>
-    <th style="text-align: center; vertical-align: middle; padding: 10px;">macOS</th>
-    <th style="text-align: center; vertical-align: middle; padding: 10px;">Linux</th>
-  </tr>
-`;
+  // 生成最新版本卡片 - 英文
+  const latestVersionCard_EN = generateLatestVersionCard(sortedVersions[0], 'en');
+  // 生成最新版本卡片 - 中文  
+  const latestVersionCard_CN = generateLatestVersionCard(sortedVersions[0], 'cn');
   
-  // 表格内容 - 英文
-  for (const entry of sortedVersions) {
-    let windowsButtons = '';
-    let macButtons = '';
-    let linuxButtons = '';
-    
-    // Windows buttons
-    if (entry.platforms['windows']) {
-      windowsButtons += `<a href="${entry.platforms['windows'].url}"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> `;
-    }
-    if (entry.platforms['windows_arm64']) {
-      windowsButtons += `<a href="${entry.platforms['windows_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a>`;
-    }
-    windowsButtons = windowsButtons.trim() || 'N/A';
-    
-    // Mac buttons
-    if (entry.platforms['mac']) {
-      macButtons += `<a href="${entry.platforms['mac'].url}"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> `;
-    }
-    if (entry.platforms['mac_intel']) {
-      macButtons += `<a href="${entry.platforms['mac_intel'].url}"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> `;
-    }
-    if (entry.platforms['mac_arm64']) {
-      macButtons += `<a href="${entry.platforms['mac_arm64'].url}"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>`;
-    }
-    macButtons = macButtons.trim() || 'N/A';
-    
-    // Linux buttons
-    if (entry.platforms['linux']) {
-      linuxButtons += `<a href="${entry.platforms['linux'].url}"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> `;
-    }
-    if (entry.platforms['linux_arm64']) {
-      linuxButtons += `<a href="${entry.platforms['linux_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a>`;
-    }
-    linuxButtons = linuxButtons.trim() || 'N/A';
-    
-    // 英文表格行
-    englishContent += `  <tr${entry === sortedVersions[0] ? ' style="background-color: #f0f8ff;"' : ''}>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">${entry.version}</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">${entry.date}</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">${windowsButtons}</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">${macButtons}</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">${linuxButtons}</td>
-    </tr>\n`;
-  }
-
-  // 表格内容 - 中文
-  for (const entry of sortedVersions) {
-    let windowsButtons = '';
-    let macButtons = '';
-    let linuxButtons = '';
-    
-    // Windows buttons
-    if (entry.platforms['windows']) {
-      windowsButtons += `<a href="${entry.platforms['windows'].url}"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> `;
-    }
-    if (entry.platforms['windows_arm64']) {
-      windowsButtons += `<a href="${entry.platforms['windows_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a>`;
-    }
-    windowsButtons = windowsButtons.trim() || 'N/A';
-    
-    // Mac buttons
-    if (entry.platforms['mac']) {
-      macButtons += `<a href="${entry.platforms['mac'].url}"><img src="https://img.shields.io/badge/通用-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> `;
-    }
-    if (entry.platforms['mac_intel']) {
-      macButtons += `<a href="${entry.platforms['mac_intel'].url}"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> `;
-    }
-    if (entry.platforms['mac_arm64']) {
-      macButtons += `<a href="${entry.platforms['mac_arm64'].url}"><img src="https://img.shields.io/badge/M芯片-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>`;
-    }
-    macButtons = macButtons.trim() || 'N/A';
-    
-    // Linux buttons
-    if (entry.platforms['linux']) {
-      linuxButtons += `<a href="${entry.platforms['linux'].url}"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> `;
-    }
-    if (entry.platforms['linux_arm64']) {
-      linuxButtons += `<a href="${entry.platforms['linux_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a>`;
-    }
-    linuxButtons = linuxButtons.trim() || 'N/A';
-    
-    // 中文表格行
-    chineseContent += `  <tr${entry === sortedVersions[0] ? ' style="background-color: #f0f8ff;"' : ''}>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">${entry.version}</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">${entry.date}</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">${windowsButtons}</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">${macButtons}</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">${linuxButtons}</td>
-    </tr>\n`;
-  }
-
-  // 表格尾部
-  englishContent += `</table>
-</div>
-
-## Detailed Version Card View
-
-`;
+  // 生成版本表格 - 英文
+  const versionTable_EN = generateVersionTable(sortedVersions, 'en');
+  // 生成版本表格 - 中文
+  const versionTable_CN = generateVersionTable(sortedVersions, 'cn'); 
   
-  chineseContent += `</table>
-</div>
-
-## 详细版本卡片视图
-
-`;
-
-  // 卡片视图 - 英文
-  for (const entry of sortedVersions) {
-    englishContent += `<details>
-<summary><b>Version ${entry.version}</b> (${entry.date})</summary>
-
-<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
-<h3>Cursor ${entry.version} Download Links</h3>
-
-#### Windows
-`;
-    if (entry.platforms['windows']) {
-      englishContent += `<a href="${entry.platforms['windows'].url}"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>\n`;
-    }
-    if (entry.platforms['windows_arm64']) {
-      englishContent += `<a href="${entry.platforms['windows_arm64'].url}"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>\n`;
-    }
-
-    englishContent += `\n#### macOS
-`;
-    if (entry.platforms['mac']) {
-      englishContent += `<a href="${entry.platforms['mac'].url}"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>\n`;
-    }
-    if (entry.platforms['mac_intel']) {
-      englishContent += `<a href="${entry.platforms['mac_intel'].url}"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>\n`;
-    }
-    if (entry.platforms['mac_arm64']) {
-      englishContent += `<a href="${entry.platforms['mac_arm64'].url}"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>\n`;
-    }
-
-    englishContent += `\n#### Linux
-`;
-    if (entry.platforms['linux']) {
-      englishContent += `<a href="${entry.platforms['linux'].url}"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>\n`;
-    }
-    if (entry.platforms['linux_arm64']) {
-      englishContent += `<a href="${entry.platforms['linux_arm64'].url}"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>\n`;
-    }
-
-    englishContent += `
-</div>
-</details>
-
-`;
-  }
-
-  // 卡片视图 - 中文
-  for (const entry of sortedVersions) {
-    chineseContent += `<details>
-<summary><b>版本 ${entry.version}</b> (${entry.date})</summary>
-
-<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
-<h3>Cursor ${entry.version} 下载链接</h3>
-
-#### Windows
-`;
-    if (entry.platforms['windows']) {
-      chineseContent += `<a href="${entry.platforms['windows'].url}"><img src="https://img.shields.io/badge/Windows_x64-下载-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>\n`;
-    }
-    if (entry.platforms['windows_arm64']) {
-      chineseContent += `<a href="${entry.platforms['windows_arm64'].url}"><img src="https://img.shields.io/badge/Windows_ARM64-下载-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>\n`;
-    }
-
-    chineseContent += `\n#### macOS
-`;
-    if (entry.platforms['mac']) {
-      chineseContent += `<a href="${entry.platforms['mac'].url}"><img src="https://img.shields.io/badge/macOS_通用-下载-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>\n`;
-    }
-    if (entry.platforms['mac_intel']) {
-      chineseContent += `<a href="${entry.platforms['mac_intel'].url}"><img src="https://img.shields.io/badge/macOS_Intel-下载-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>\n`;
-    }
-    if (entry.platforms['mac_arm64']) {
-      chineseContent += `<a href="${entry.platforms['mac_arm64'].url}"><img src="https://img.shields.io/badge/macOS_M芯片-下载-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>\n`;
-    }
-
-    chineseContent += `\n#### Linux
-`;
-    if (entry.platforms['linux']) {
-      chineseContent += `<a href="${entry.platforms['linux'].url}"><img src="https://img.shields.io/badge/Linux_x64-下载-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>\n`;
-    }
-    if (entry.platforms['linux_arm64']) {
-      chineseContent += `<a href="${entry.platforms['linux_arm64'].url}"><img src="https://img.shields.io/badge/Linux_ARM64-下载-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>\n`;
-    }
-
-    chineseContent += `
-</div>
-</details>
-
-`;
-  }
-
-  // 更新文件内容
-  fs.writeFileSync(englishReadmePath, englishContent, 'utf8');
-  fs.writeFileSync(chineseReadmePath, chineseContent, 'utf8');
+  // 生成详细卡片视图 - 英文
+  const detailedCards_EN = generateDetailedCards(sortedVersions, 'en');
+  // 生成详细卡片视图 - 中文
+  const detailedCards_CN = generateDetailedCards(sortedVersions, 'cn');
+  
+  // 更新英文README
+  updateReadmeFile(englishReadmePath, {
+    latestVersionCard: latestVersionCard_EN,
+    versionTable: versionTable_EN,
+    detailedCards: detailedCards_EN
+  });
+  
+  // 更新中文README
+  updateReadmeFile(chineseReadmePath, {
+    latestVersionCard: latestVersionCard_CN,
+    versionTable: versionTable_CN,
+    detailedCards: detailedCards_CN
+  });
+  
   console.log('README.md and README_CN.md have been updated with latest version information');
+}
+
+/**
+ * Generate latest version card HTML
+ */
+function generateLatestVersionCard(versionEntry: any, language: string = 'en'): string {
+  if (!versionEntry) return '';
+  
+  const isEnglish = language === 'en';
+  const downloadText = isEnglish ? 'Download' : '下载';
+  const universalText = isEnglish ? 'Universal' : '通用';
+  const mChipText = isEnglish ? 'M_Chip' : 'M芯片';
+  const releaseDateText = isEnglish ? 'Release Date' : '发布日期';
+  
+  let card = `
+<div style="background-color: #f8f9fa; border-radius: 10px; padding: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <h3 style="text-align: center; margin-top: 0;">🚀 Cursor ${versionEntry.version}</h3>
+  <p style="text-align: center; color: #666; margin-bottom: 15px;">${releaseDateText}: ${versionEntry.date}</p>
+  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+    <div style="text-align: center; margin: 5px;">
+      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></h4>
+      ${versionEntry.platforms['windows'] ? `<a href="${versionEntry.platforms['windows'].url}"><img src="https://img.shields.io/badge/x64-${downloadText}-blue?style=flat-square" alt="Windows x64"></a><br>` : ''}
+      ${versionEntry.platforms['windows_arm64'] ? `<a href="${versionEntry.platforms['windows_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-${downloadText}-blue?style=flat-square" alt="Windows ARM64"></a>` : ''}
+    </div>
+    <div style="text-align: center; margin: 5px;">
+      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS"></h4>
+      ${versionEntry.platforms['mac'] ? `<a href="${versionEntry.platforms['mac'].url}"><img src="https://img.shields.io/badge/${universalText}-${downloadText}-black?style=flat-square" alt="macOS Universal"></a><br>` : ''}
+      ${versionEntry.platforms['mac_intel'] ? `<a href="${versionEntry.platforms['mac_intel'].url}"><img src="https://img.shields.io/badge/Intel-${downloadText}-black?style=flat-square" alt="macOS Intel"></a><br>` : ''}
+      ${versionEntry.platforms['mac_arm64'] ? `<a href="${versionEntry.platforms['mac_arm64'].url}"><img src="https://img.shields.io/badge/${mChipText}-${downloadText}-black?style=flat-square" alt="macOS M1/M2/M3"></a>` : ''}
+    </div>
+    <div style="text-align: center; margin: 5px;">
+      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></h4>
+      ${versionEntry.platforms['linux'] ? `<a href="${versionEntry.platforms['linux'].url}"><img src="https://img.shields.io/badge/x64-${downloadText}-yellow?style=flat-square" alt="Linux x64"></a><br>` : ''}
+      ${versionEntry.platforms['linux_arm64'] ? `<a href="${versionEntry.platforms['linux_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-${downloadText}-yellow?style=flat-square" alt="Linux ARM64"></a>` : ''}
+    </div>
+  </div>
+</div>`;
+
+  return card;
+}
+
+/**
+ * Generate version table HTML
+ */
+function generateVersionTable(versions: any[], language: string = 'en'): string {
+  const isEnglish = language === 'en';
+  const versionText = isEnglish ? 'Version' : '版本';
+  const dateText = isEnglish ? 'Date' : '日期';
+  const universalText = isEnglish ? 'Universal' : '通用';
+  const mChipText = isEnglish ? 'M_Chip' : 'M芯片';
+  
+  let table = `<table style="width: 100%; border-collapse: collapse;">
+  <tr style="background-color: #f8f9fa;">
+    <th style="text-align: center; vertical-align: middle; padding: 10px;">${versionText}</th>
+    <th style="text-align: center; vertical-align: middle; padding: 10px;">${dateText}</th>
+    <th style="text-align: center; vertical-align: middle; padding: 10px;">Windows</th>
+    <th style="text-align: center; vertical-align: middle; padding: 10px;">macOS</th>
+    <th style="text-align: center; vertical-align: middle; padding: 10px;">Linux</th>
+  </tr>
+`;
+
+  for (const entry of versions) {
+    let windowsButtons = '';
+    let macButtons = '';
+    let linuxButtons = '';
+    
+    // Windows buttons
+    if (entry.platforms['windows']) {
+      windowsButtons += `<a href="${entry.platforms['windows'].url}"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> `;
+    }
+    if (entry.platforms['windows_arm64']) {
+      windowsButtons += `<a href="${entry.platforms['windows_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a>`;
+    }
+    windowsButtons = windowsButtons.trim() || 'N/A';
+    
+    // Mac buttons
+    const macUniversalText = isEnglish ? 'Universal' : '通用';
+    if (entry.platforms['mac']) {
+      macButtons += `<a href="${entry.platforms['mac'].url}"><img src="https://img.shields.io/badge/${macUniversalText}-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> `;
+    }
+    if (entry.platforms['mac_intel']) {
+      macButtons += `<a href="${entry.platforms['mac_intel'].url}"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> `;
+    }
+    if (entry.platforms['mac_arm64']) {
+      macButtons += `<a href="${entry.platforms['mac_arm64'].url}"><img src="https://img.shields.io/badge/${mChipText}-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>`;
+    }
+    macButtons = macButtons.trim() || 'N/A';
+    
+    // Linux buttons
+    if (entry.platforms['linux']) {
+      linuxButtons += `<a href="${entry.platforms['linux'].url}"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> `;
+    }
+    if (entry.platforms['linux_arm64']) {
+      linuxButtons += `<a href="${entry.platforms['linux_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a>`;
+    }
+    linuxButtons = linuxButtons.trim() || 'N/A';
+    
+    // 版本表格行
+    table += `  <tr${entry === versions[0] ? ' style="background-color: #f0f8ff;"' : ''}>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">${entry.version}</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">${entry.date}</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">${windowsButtons}</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">${macButtons}</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">${linuxButtons}</td>
+    </tr>\n`;
+  }
+  
+  table += `</table>`;
+  return table;
+}
+
+/**
+ * Generate detailed cards view HTML
+ */
+function generateDetailedCards(versions: any[], language: string = 'en'): string {
+  const isEnglish = language === 'en';
+  const versionText = isEnglish ? 'Version' : '版本';
+  const downloadText = isEnglish ? 'Download' : '下载';
+  const universalText = isEnglish ? 'Universal' : '通用';
+  const mChipText = isEnglish ? 'M_Chip' : 'M芯片';
+  const downloadLinksText = isEnglish ? 'Download Links' : '下载链接';
+  
+  let cards = '';
+  
+  for (const entry of versions) {
+    cards += `<details>
+<summary><b>${versionText} ${entry.version}</b> (${entry.date})</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor ${entry.version} ${downloadLinksText}</h3>
+
+#### Windows
+`;
+    if (entry.platforms['windows']) {
+      cards += `<a href="${entry.platforms['windows'].url}"><img src="https://img.shields.io/badge/Windows_x64-${downloadText}-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>\n`;
+    }
+    if (entry.platforms['windows_arm64']) {
+      cards += `<a href="${entry.platforms['windows_arm64'].url}"><img src="https://img.shields.io/badge/Windows_ARM64-${downloadText}-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>\n`;
+    }
+
+    cards += `\n#### macOS
+`;
+    if (entry.platforms['mac']) {
+      cards += `<a href="${entry.platforms['mac'].url}"><img src="https://img.shields.io/badge/macOS_${universalText}-${downloadText}-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>\n`;
+    }
+    if (entry.platforms['mac_intel']) {
+      cards += `<a href="${entry.platforms['mac_intel'].url}"><img src="https://img.shields.io/badge/macOS_Intel-${downloadText}-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>\n`;
+    }
+    if (entry.platforms['mac_arm64']) {
+      cards += `<a href="${entry.platforms['mac_arm64'].url}"><img src="https://img.shields.io/badge/macOS_${mChipText}-${downloadText}-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>\n`;
+    }
+
+    cards += `\n#### Linux
+`;
+    if (entry.platforms['linux']) {
+      cards += `<a href="${entry.platforms['linux'].url}"><img src="https://img.shields.io/badge/Linux_x64-${downloadText}-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>\n`;
+    }
+    if (entry.platforms['linux_arm64']) {
+      cards += `<a href="${entry.platforms['linux_arm64'].url}"><img src="https://img.shields.io/badge/Linux_ARM64-${downloadText}-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>\n`;
+    }
+
+    cards += `
+</div>
+</details>
+
+`;
+  }
+  
+  return cards;
+}
+
+/**
+ * Update README file with content markers
+ */
+function updateReadmeFile(filePath: string, content: { 
+  latestVersionCard: string, 
+  versionTable: string,
+  detailedCards: string
+}): void {
+  if (!fs.existsSync(filePath)) {
+    console.error(`File ${filePath} not found`);
+    return;
+  }
+
+  try {
+    let fileContent = fs.readFileSync(filePath, 'utf8');
+    
+    // Define markers for content sections
+    const latestVersionCardStartMarker = '<!-- LATEST_VERSION_CARD_START -->';
+    const latestVersionCardEndMarker = '<!-- LATEST_VERSION_CARD_END -->';
+    const versionTableStartMarker = '<!-- VERSION_TABLE_START -->';
+    const versionTableEndMarker = '<!-- VERSION_TABLE_END -->';
+    const detailedCardsStartMarker = '<!-- DETAILED_CARDS_START -->';
+    const detailedCardsEndMarker = '<!-- DETAILED_CARDS_END -->';
+    
+    // Check if markers exist, if not, add them
+    if (!fileContent.includes(latestVersionCardStartMarker)) {
+      // 查找 "Latest Version Card" 部分并添加标记
+      const latestVersionCardSection = /## Latest Version Card\s*\n\s*<div align="center">/;
+      if (latestVersionCardSection.test(fileContent)) {
+        fileContent = fileContent.replace(
+          latestVersionCardSection, 
+          `## Latest Version Card\n\n${latestVersionCardStartMarker}\n<div align="center">`
+        );
+      }
+    }
+    
+    if (!fileContent.includes(latestVersionCardEndMarker)) {
+      // 查找最新版本卡片结束部分并添加标记
+      const latestVersionCardEndSection = /<\/div>\s*<\/div>\s*\n\s*## All Versions/;
+      if (latestVersionCardEndSection.test(fileContent)) {
+        fileContent = fileContent.replace(
+          latestVersionCardEndSection, 
+          `</div>\n</div>\n${latestVersionCardEndMarker}\n\n## All Versions`
+        );
+      }
+    }
+    
+    if (!fileContent.includes(versionTableStartMarker)) {
+      // 查找版本表格开始部分并添加标记
+      const versionTableSection = /<div align="center">\s*\n\s*<table style="width: 100%; border-collapse: collapse;">/;
+      if (versionTableSection.test(fileContent)) {
+        fileContent = fileContent.replace(
+          versionTableSection, 
+          `<div align="center">\n${versionTableStartMarker}\n<table style="width: 100%; border-collapse: collapse;">`
+        );
+      }
+    }
+    
+    if (!fileContent.includes(versionTableEndMarker)) {
+      // 查找版本表格结束部分并添加标记
+      const versionTableEndSection = /<\/table>\s*\n\s*<\/div>\s*\n\s*## Detailed/;
+      if (versionTableEndSection.test(fileContent)) {
+        fileContent = fileContent.replace(
+          versionTableEndSection, 
+          `</table>\n${versionTableEndMarker}\n</div>\n\n## Detailed`
+        );
+      }
+    }
+    
+    if (!fileContent.includes(detailedCardsStartMarker)) {
+      // 查找详细卡片视图开始部分并添加标记
+      const detailedCardsSection = /## Detailed.*\s*\n/;
+      if (detailedCardsSection.test(fileContent)) {
+        fileContent = fileContent.replace(
+          detailedCardsSection, 
+          (match) => `${match}\n${detailedCardsStartMarker}\n`
+        );
+      }
+    }
+    
+    if (!fileContent.includes(detailedCardsEndMarker)) {
+      // 添加详细卡片结束标记到文件末尾
+      fileContent += `\n${detailedCardsEndMarker}\n`;
+    }
+    
+    // 更新各部分内容
+    if (fileContent.includes(latestVersionCardStartMarker) && fileContent.includes(latestVersionCardEndMarker)) {
+      const startPos = fileContent.indexOf(latestVersionCardStartMarker) + latestVersionCardStartMarker.length;
+      const endPos = fileContent.indexOf(latestVersionCardEndMarker);
+      fileContent = fileContent.substring(0, startPos) + 
+                    '\n<div align="center">\n<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">\n' +
+                    content.latestVersionCard + 
+                    '\n</div>\n</div>\n' +
+                    fileContent.substring(endPos);
+    }
+    
+    if (fileContent.includes(versionTableStartMarker) && fileContent.includes(versionTableEndMarker)) {
+      const startPos = fileContent.indexOf(versionTableStartMarker) + versionTableStartMarker.length;
+      const endPos = fileContent.indexOf(versionTableEndMarker);
+      fileContent = fileContent.substring(0, startPos) + '\n' + content.versionTable + '\n' + fileContent.substring(endPos);
+    }
+    
+    if (fileContent.includes(detailedCardsStartMarker) && fileContent.includes(detailedCardsEndMarker)) {
+      const startPos = fileContent.indexOf(detailedCardsStartMarker) + detailedCardsStartMarker.length;
+      const endPos = fileContent.indexOf(detailedCardsEndMarker);
+      fileContent = fileContent.substring(0, startPos) + '\n\n' + content.detailedCards + fileContent.substring(endPos);
+    }
+    
+    // 保存更新后的文件
+    fs.writeFileSync(filePath, fileContent, 'utf8');
+  } catch (error) {
+    console.error(`Error updating file ${filePath}:`, error instanceof Error ? error.message : 'Unknown error');
+  }
 }
 
 /**

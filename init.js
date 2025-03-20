@@ -5,8 +5,8 @@
  */
 
 import { execSync } from 'child_process';
-import fs from 'fs';
-import path from 'path';
+import * as fs from 'fs';
+import * as path from 'path';
 import { fileURLToPath } from 'url';
 
 // 获取 __dirname (ES模块中需要)
@@ -69,5 +69,99 @@ if (fs.existsSync(sourceHistoryPath) && !fs.existsSync(targetHistoryPath)) {
   console.log(`${colors.yellow}未找到源版本历史记录文件. 将创建新的历史记录.${colors.reset}\n`);
 }
 
-// 询问是否运行更新
-console.log(`${colors.bright}${colors.green}初始化完成!${colors.reset}\n`);
+/**
+ * 添加HTML注释标记到README文件
+ */
+function addMarkersToReadmeFiles() {
+  console.log('添加HTML注释标记到README文件...');
+
+  const readmeFiles = ['README.md', 'README_CN.md'];
+
+  for (const readmeFile of readmeFiles) {
+    const filePath = path.join(__dirname, readmeFile);
+
+    if (!fs.existsSync(filePath)) {
+      console.log(`文件 ${readmeFile} 不存在，跳过`);
+      continue;
+    }
+
+    let content = fs.readFileSync(filePath, 'utf8');
+    let modified = false;
+
+    // 定义需要添加的标记
+    const markers = [
+      {
+        name: 'Latest Version Card',
+        startMarker: '<!-- LATEST_VERSION_CARD_START -->',
+        endMarker: '<!-- LATEST_VERSION_CARD_END -->',
+        startRegex: /## (Latest Version Card|最新版本卡片)\s*\n\s*<div align="center">/,
+        startReplacement: (match) => `${match.split('<div')[0]}\n${markers[0].startMarker}\n<div`,
+        endRegex: /<\/div>\s*\n\s*<\/div>\s*\n\s*## (All Versions|所有版本)/,
+        endReplacement: (match) => `</div>\n</div>\n${markers[0].endMarker}\n\n${match.split('##')[1].startsWith(' ') ? '#' : ''}# ${match.split('##')[1].trim()}`
+      },
+      {
+        name: 'Version Table',
+        startMarker: '<!-- VERSION_TABLE_START -->',
+        endMarker: '<!-- VERSION_TABLE_END -->',
+        startRegex: /<div align="center">\s*\n\s*<table style="width: 100%; border-collapse: collapse;">/,
+        startReplacement: (match) => `<div align="center">\n${markers[1].startMarker}\n<table style="width: 100%; border-collapse: collapse;">`,
+        endRegex: /<\/table>\s*\n\s*<\/div>\s*\n\s*## (Detailed|详细)/,
+        endReplacement: (match) => `</table>\n${markers[1].endMarker}\n</div>\n\n${match.split('##')[1].startsWith(' ') ? '#' : ''}# ${match.split('##')[1].trim()}`
+      },
+      {
+        name: 'Detailed Cards',
+        startMarker: '<!-- DETAILED_CARDS_START -->',
+        endMarker: '<!-- DETAILED_CARDS_END -->',
+        startRegex: /## (Detailed|详细).*\s*\n/,
+        startReplacement: (match) => `${match}\n${markers[2].startMarker}\n`,
+        endRegex: null, // 无结束正则表达式，因为它会添加到文件末尾
+        endReplacement: null
+      }
+    ];
+
+    // 添加标记
+    for (const marker of markers) {
+      // 检查起始标记是否存在
+      if (!content.includes(marker.startMarker) && marker.startRegex && marker.startRegex.test(content)) {
+        content = content.replace(marker.startRegex, marker.startReplacement);
+        modified = true;
+        console.log(`已添加 ${marker.name} 起始标记到 ${readmeFile}`);
+      }
+
+      // 检查结束标记是否存在
+      if (!content.includes(marker.endMarker)) {
+        if (marker.endRegex && marker.endRegex.test(content)) {
+          content = content.replace(marker.endRegex, marker.endReplacement);
+          modified = true;
+          console.log(`已添加 ${marker.name} 结束标记到 ${readmeFile}`);
+        } else if (marker.endMarker && !marker.endRegex) {
+          // 如果没有结束正则表达式，则添加到文件末尾
+          content += `\n\n${marker.endMarker}\n`;
+          modified = true;
+          console.log(`已添加 ${marker.name} 结束标记到 ${readmeFile} 的末尾`);
+        }
+      }
+    }
+
+    // 保存修改后的文件
+    if (modified) {
+      fs.writeFileSync(filePath, content, 'utf8');
+      console.log(`文件 ${readmeFile} 已更新`);
+    } else {
+      console.log(`文件 ${readmeFile} 已包含所有必要的标记，无需修改`);
+    }
+  }
+}
+
+// 执行初始化操作
+function init() {
+  console.log('开始初始化项目...');
+
+  // 添加HTML注释标记到README文件
+  addMarkersToReadmeFiles();
+
+  console.log('初始化完成');
+}
+
+// 执行初始化
+init();
