@@ -157,7 +157,7 @@ async function fetchLatestDownloadUrl(
 		const timeoutId = setTimeout(() => controller.abort(), 10000)
 
 		const response = await fetch(
-			`https://www.cursor.com/api/download?platform=${platform}&releaseTrack=stable`,
+			`https://www.cursor.com/api/download?platform=${platform}&releaseTrack=latest`,
 			{
 				headers: {
 					'User-Agent': 'Cursor-Version-Checker',
