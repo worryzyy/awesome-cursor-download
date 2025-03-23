@@ -63,23 +63,16 @@ npm run update
 
 <div style="background-color: #f8f9fa; border-radius: 10px; padding: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <h3 style="text-align: center; margin-top: 0;">🚀 Cursor 0.47.9</h3>
-  <p style="text-align: center; color: #666; margin-bottom: 15px;">发布日期: 2025-03-22</p>
+  <p style="text-align: center; color: #666; margin-bottom: 15px;">发布日期: 2025-03-23</p>
   <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <div style="text-align: center; margin: 5px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></h4>
-      
-      
+    <div style="text-align: center; margin: 5px; min-width: 120px;">
+      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></h4><span style="color: #666; font-size: 12px;">即将推出</span>
     </div>
-    <div style="text-align: center; margin: 5px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS"></h4>
-      
-      
-      
+    <div style="text-align: center; margin: 5px; min-width: 120px;">
+      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS"></h4><span style="color: #666; font-size: 12px;">即将推出</span>
     </div>
-    <div style="text-align: center; margin: 5px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></h4>
-      <a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/linux/x64/Cursor-0.47.9-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-下载-yellow?style=flat-square" alt="Linux x64"></a><br>
-      <a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/linux/arm64/Cursor-0.47.9-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-下载-yellow?style=flat-square" alt="Linux ARM64"></a>
+    <div style="text-align: center; margin: 5px; min-width: 120px;">
+      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></h4><a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/linux/x64/Cursor-0.47.9-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-下载-yellow?style=flat-square" alt="Linux x64"></a><br><a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/linux/arm64/Cursor-0.47.9-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-下载-yellow?style=flat-square" alt="Linux ARM64"></a>
     </div>
   </div>
 </div>
@@ -101,7 +94,7 @@ npm run update
   </tr>
   <tr style="background-color: #f0f8ff;">
       <td style="text-align: center; vertical-align: middle; padding: 10px;">0.47.9</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-22</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-23</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">N/A</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">N/A</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/linux/x64/Cursor-0.47.9-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/linux/arm64/Cursor-0.47.9-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
@@ -360,7 +353,7 @@ npm run update
     </tr>
   <tr>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">0.42.3</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;">undefined</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2024-10-16</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://storage.googleapis.com/cursor-history-exe/v0.42.3/windows/x64/Cursor-Setup-0.42.3.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a></td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://storage.googleapis.com/cursor-history-exe/v0.42.3/macos/x64/Cursor-0.42.3.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://storage.googleapis.com/cursor-history-exe/v0.42.3/macos/arm64/Cursor-0.42.3-arm64.dmg"><img src="https://img.shields.io/badge/M芯片-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://storage.googleapis.com/cursor-history-exe/v0.42.3/linux/x64/Cursor-0.42.3.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a></td>
@@ -528,7 +521,7 @@ npm run update
 <!-- DETAILED_CARDS_START -->
 
 <details>
-<summary><b>版本 0.47.9</b> (2025-03-22)</summary>
+<summary><b>版本 0.47.9</b> (2025-03-23)</summary>
 
 <div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
 <h3>Cursor 0.47.9 下载链接</h3>
@@ -1269,7 +1262,7 @@ npm run update
 </details>
 
 <details>
-<summary><b>版本 0.42.3</b> (undefined)</summary>
+<summary><b>版本 0.42.3</b> (2024-10-16)</summary>
 
 <div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
 <h3>Cursor 0.42.3 下载链接</h3>

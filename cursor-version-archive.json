@@ -916,8 +916,8 @@
     }
   },
   "0.42.3": {
+    "date": "2024-10-16",
     "platforms": {
-      "date": "2024-10-16",
       "windows": {
         "url": "https://storage.googleapis.com/cursor-history-exe/v0.42.3/windows/x64/Cursor-Setup-0.42.3.exe",
         "checksum": "l85ajwt3slk7uomsvl59"
@@ -1395,19 +1395,6 @@
       "linux": {
         "url": "https://storage.googleapis.com/cursor-history-exe/v0.36.2/linux/x64/Cursor-0.36.2.AppImage",
         "checksum": "i2ctqakv5b1yly17o87d"
-      }
-    }
-  },
-  "0.47.9": {
-    "date": "2025-03-22",
-    "platforms": {
-      "linux": {
-        "url": "https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/linux/x64/Cursor-0.47.9-x86_64.AppImage",
-        "checksum": "b6fb41b5f36bda05cab7109606e7404a65d1ff32"
-      },
-      "linux_arm64": {
-        "url": "https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/linux/arm64/Cursor-0.47.9-aarch64.AppImage",
-        "checksum": "b6fb41b5f36bda05cab7109606e7404a65d1ff32"
       }
     }
   }
