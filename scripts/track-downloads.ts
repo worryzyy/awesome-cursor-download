@@ -455,9 +455,7 @@ function generateVersionTable(
 		linuxButtons = linuxButtons.trim() || 'N/A'
     // 添加更新日志列
     const changelog = entry.changelog || 'N/A'
-    if(entry.version === '0.48.5'){
-      console.log('00000000000000000000000000000',entry)
-    }
+   
 		table += `  <tr${
 			entry === versions[0] ? ' style="background-color: #f0f8ff;"' : ''
 		}>
