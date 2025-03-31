@@ -207,6 +207,28 @@ function readVersionHistory(): VersionHistory {
 }
 
 /**
+ * 按版本号排序版本历史，新版本在前
+ */
+function sortVersionHistory(history: VersionHistory): VersionHistory {
+	return Object.fromEntries(
+		Object.entries(history).sort((a, b) => {
+			const versionA = a[0].split('.').map(Number)
+			const versionB = b[0].split('.').map(Number)
+			
+			// 从高版本到低版本排序
+			for (let i = 0; i < Math.max(versionA.length, versionB.length); i++) {
+				const numA = versionA[i] || 0
+				const numB = versionB[i] || 0
+				if (numA !== numB) {
+					return numB - numA // 降序排列
+				}
+			}
+			return 0
+		})
+	)
+}
+
+/**
  * Save version history to JSON file
  */
 function saveVersionHistory(history: VersionHistory): void {
@@ -214,16 +236,18 @@ function saveVersionHistory(history: VersionHistory): void {
 		console.error('Invalid version history object provided')
 		return
 	}
-
+	
 	const historyPath = path.join(process.cwd(), 'cursor-version-archive.json')
 	try {
-		fs.writeFileSync(historyPath, JSON.stringify(history, null, 2), 'utf8')
-		console.log(`Version history saved to ${historyPath}`)
+		// 对版本历史进行排序
+		const sortedHistory = sortVersionHistory(history)
+		
+		// 将排序后的历史写入文件
+		const jsonContent = JSON.stringify(sortedHistory, null, 2)
+		fs.writeFileSync(historyPath, jsonContent, 'utf8')
+		console.log(`Version history saved to ${historyPath} (sorted by version)`)
 	} catch (error) {
-		console.error(
-			'Error saving version history:',
-			error instanceof Error ? error.message : 'Unknown error'
-		)
+		console.error('Error saving version history:', error instanceof Error ? error.message : 'Unknown error')
 	}
 }
 
