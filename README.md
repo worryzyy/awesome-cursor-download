@@ -155,7 +155,7 @@ Below are the official download links for various versions of Cursor AI, present
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/win32/x64/user-setup/CursorUserSetup-x64-0.47.9.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.9.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/linux/x64/Cursor-0.47.9-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/b6fb41b5f36bda05cab7109606e7404a65d1ff32/linux/arm64/Cursor-0.47.9-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
-      <td style="text-align: left; vertical-align: middle; padding: 10px;">N/A</td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Performance improvements related to memory usage</td>
     </tr>
   <tr>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">0.47.8</td>
@@ -163,14 +163,166 @@ Below are the official download links for various versions of Cursor AI, present
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/82ef0f61c01d079d1b7e5ab04d88499d5af500e3/win32/x64/user-setup/CursorUserSetup-x64-0.47.8.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/82ef0f61c01d079d1b7e5ab04d88499d5af500e3/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.8.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/82ef0f61c01d079d1b7e5ab04d88499d5af500e3/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/82ef0f61c01d079d1b7e5ab04d88499d5af500e3/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/82ef0f61c01d079d1b7e5ab04d88499d5af500e3/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/82ef0f61c01d079d1b7e5ab04d88499d5af500e3/linux/x64/Cursor-0.47.8-82ef0f61c01d079d1b7e5ab04d88499d5af500e3.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/82ef0f61c01d079d1b7e5ab04d88499d5af500e3/linux/arm64/Cursor-0.47.8-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;"> UI fix for scrollable model name</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.47.7</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-18</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/win32/x64/user-setup/CursorUserSetup-x64-0.47.7.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.7.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.7-33ec0dad159bc0ad620f6bbda539efe90c39748d.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.7-33ec0dad159bc0ad620f6bbda539efe90c39748d.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">MAX mode for 3.7 Sonnet with and without thinking</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.47.6</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-17</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/win32/x64/user-setup/CursorUserSetup-x64-0.47.6.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.6.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.6-6a1a6fbc55483584e7022f491c8a167ccac86f22.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.6-6a1a6fbc55483584e7022f491c8a167ccac86f22.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Faster applies, warns user when edits fails because of cursorignore</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.47.5</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-14</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/win32/x64/user-setup/CursorUserSetup-x64-0.47.5.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.5.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.5-53d6da1322f934a1058e7569ee0847b24879d18c.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.5-53d6da1322f934a1058e7569ee0847b24879d18c.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Client-side support for upcoming MAX mode compatbility for Claude 3.7 Sonnet</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.47.4</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-14</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/win32/x64/user-setup/CursorUserSetup-x64-0.47.4.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.4.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.4-8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.4-8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Fixes an edge case where red diffs stick around in the editor</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.47.3</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-13</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/win32/x64/user-setup/CursorUserSetup-x64-0.47.3.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.3.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.3-dab1538cd064aebd4292f9de48b05022c974aff6.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.3-dab1538cd064aebd4292f9de48b05022c974aff6.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Fixes an issue with tool call errors on file edits</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.47.2</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-13</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/win32/x64/user-setup/CursorUserSetup-x64-0.47.2.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.2.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.2-bed609aa4a57e9d82664006f152d3f77589eed10.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.2-bed609aa4a57e9d82664006f152d3f77589eed10.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Cursor Tab accepts work with single-line selections</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.47.1</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-11</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/win32/x64/user-setup/CursorUserSetup-x64-0.47.1.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.1.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.1-aafb3fe1326c939656bd06f325a9e17679aeec7f.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.1-aafb3fe1326c939656bd06f325a9e17679aeec7f.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Improved performance, added back play button to apply code blocks</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.47.0</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-11</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/win32/x64/user-setup/CursorUserSetup-x64-0.47.0.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.0.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.0-4a602340d7b014d700647120bae9079607f2ae9b.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.0-4a602340d7b014d700647120bae9079607f2ae9b.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
       <td style="text-align: left; vertical-align: middle; padding: 10px;">N/A</td>
     </tr>
   <tr>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.11</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-07</td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/windows/x64/Cursor-Setup-0.46.11.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/windows/arm64/Cursor-Setup-0.46.11-arm64.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/macos/universal/Cursor-0.46.11-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/macos/x64/Cursor-0.46.11.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/macos/arm64/Cursor-0.46.11-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
-      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/linux/x64/Cursor-0.46.11.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/win32/x64/user-setup/CursorUserSetup-x64-0.46.11.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.11.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.11-ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.11-ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Release track picker (prerelease or standard), fix for dmg installer not working in rare cases</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.10</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-06</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/7b3e0d45d4f952938dbd8e1e29c1b17003198481/win32/x64/user-setup/CursorUserSetup-x64-0.46.10.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/7b3e0d45d4f952938dbd8e1e29c1b17003198481/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.10.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/7b3e0d45d4f952938dbd8e1e29c1b17003198481/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/7b3e0d45d4f952938dbd8e1e29c1b17003198481/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/7b3e0d45d4f952938dbd8e1e29c1b17003198481/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.10-7b3e0d45d4f952938dbd8e1e29c1b17003198481.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.10-7b3e0d45d4f952938dbd8e1e29c1b17003198481.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Fix for chat/apply not working with .github and other . prefixed folders, and small performance fixes.</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.9</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-05</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3395357a4ee2975d5d03595e7607ee84e3db0f2c/win32/x64/user-setup/CursorUserSetup-x64-0.46.9.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3395357a4ee2975d5d03595e7607ee84e3db0f2c/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.9.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3395357a4ee2975d5d03595e7607ee84e3db0f2c/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3395357a4ee2975d5d03595e7607ee84e3db0f2c/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3395357a4ee2975d5d03595e7607ee84e3db0f2c/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.9-3395357a4ee2975d5d03595e7607ee84e3db0f2c.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.9-3395357a4ee2975d5d03595e7607ee84e3db0f2c.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Memory and performances fixes, composer/chat remembers your last mode selection, http/1.1 support for agent/chat, linux python env vars fixed, cursorignore fixes</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.8</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-03-01</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/be4f0962469499f009005e66867c8402202ff0b7/win32/x64/user-setup/CursorUserSetup-x64-0.46.8.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/be4f0962469499f009005e66867c8402202ff0b7/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.8.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/be4f0962469499f009005e66867c8402202ff0b7/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/be4f0962469499f009005e66867c8402202ff0b7/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/be4f0962469499f009005e66867c8402202ff0b7/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.8-be4f0962469499f009005e66867c8402202ff0b7.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.8-be4f0962469499f009005e66867c8402202ff0b7.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Fix for windows 'rename tools' update error, fix for some users unable to cancel agent terminal commands</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.7</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-02-27</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3611c5390c448b242ab97e328493bb8ef7241e61/win32/x64/user-setup/CursorUserSetup-x64-0.46.7.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3611c5390c448b242ab97e328493bb8ef7241e61/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.7.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3611c5390c448b242ab97e328493bb8ef7241e61/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3611c5390c448b242ab97e328493bb8ef7241e61/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3611c5390c448b242ab97e328493bb8ef7241e61/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.7-3611c5390c448b242ab97e328493bb8ef7241e61.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.7-3611c5390c448b242ab97e328493bb8ef7241e61.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Improved memory usage and performance</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.6</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-02-26</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/5ac4b6282478aa0f4d1bfc032412616523788843/win32/x64/user-setup/CursorUserSetup-x64-0.46.6.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/5ac4b6282478aa0f4d1bfc032412616523788843/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.6.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/5ac4b6282478aa0f4d1bfc032412616523788843/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/5ac4b6282478aa0f4d1bfc032412616523788843/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/5ac4b6282478aa0f4d1bfc032412616523788843/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.6-5ac4b6282478aa0f4d1bfc032412616523788843.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.6-5ac4b6282478aa0f4d1bfc032412616523788843.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Improved Windows installation process</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.5</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-02-26</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/9fa6e431b47f723d1bac24802102dd2fd8ea72b0/win32/x64/user-setup/CursorUserSetup-x64-0.46.5.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/9fa6e431b47f723d1bac24802102dd2fd8ea72b0/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.5.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/9fa6e431b47f723d1bac24802102dd2fd8ea72b0/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/9fa6e431b47f723d1bac24802102dd2fd8ea72b0/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/9fa6e431b47f723d1bac24802102dd2fd8ea72b0/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.5-9fa6e431b47f723d1bac24802102dd2fd8ea72b0.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.5-9fa6e431b47f723d1bac24802102dd2fd8ea72b0.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Resolved issues with extended tool calls, long Composer sessions, and retry functionality</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.4</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-02-25</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/db71624816f6d52f6e54f47c37cdc7df23e22623/win32/x64/user-setup/CursorUserSetup-x64-0.46.4.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/db71624816f6d52f6e54f47c37cdc7df23e22623/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.4.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/db71624816f6d52f6e54f47c37cdc7df23e22623/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/db71624816f6d52f6e54f47c37cdc7df23e22623/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/db71624816f6d52f6e54f47c37cdc7df23e22623/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.4-db71624816f6d52f6e54f47c37cdc7df23e22623.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.4-db71624816f6d52f6e54f47c37cdc7df23e22623.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Added support for multiple image attachments and fixed "User aborted request" error</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.3</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-02-25</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/fce3511bab261b4c986797f3e1e40e7621bbd012/win32/x64/user-setup/CursorUserSetup-x64-0.46.3.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/fce3511bab261b4c986797f3e1e40e7621bbd012/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.3.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/fce3511bab261b4c986797f3e1e40e7621bbd012/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/fce3511bab261b4c986797f3e1e40e7621bbd012/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/fce3511bab261b4c986797f3e1e40e7621bbd012/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.3-fce3511bab261b4c986797f3e1e40e7621bbd012.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.3-fce3511bab261b4c986797f3e1e40e7621bbd012.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Enhanced download reliability, fixed keybinding issue</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.2</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-02-23</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/84b9c6d907219bb8c2874f299540eb6a079187ab/win32/x64/user-setup/CursorUserSetup-x64-0.46.2.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/84b9c6d907219bb8c2874f299540eb6a079187ab/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.2.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/84b9c6d907219bb8c2874f299540eb6a079187ab/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/84b9c6d907219bb8c2874f299540eb6a079187ab/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/84b9c6d907219bb8c2874f299540eb6a079187ab/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.2-84b9c6d907219bb8c2874f299540eb6a079187ab.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.2-84b9c6d907219bb8c2874f299540eb6a079187ab.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Improved MCP reliability, added option to disable yolo mode for MCP</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.1</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-02-23</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/69ce6c261e430e5be69213f1e721e50142477715/win32/x64/user-setup/CursorUserSetup-x64-0.46.1.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/69ce6c261e430e5be69213f1e721e50142477715/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.1.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/69ce6c261e430e5be69213f1e721e50142477715/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/69ce6c261e430e5be69213f1e721e50142477715/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/69ce6c261e430e5be69213f1e721e50142477715/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.1-69ce6c261e430e5be69213f1e721e50142477715.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.1-69ce6c261e430e5be69213f1e721e50142477715.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">Fixed HTTP2 and system certificate errors, resolved memory leaks</td>
+    </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">0.46.0</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-02-22</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/win32/x64/user-setup/CursorUserSetup-x64-0.46.0.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.0.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.0-aff57e1d9a74ed627fb5bd393e347079514436a7.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.0-aff57e1d9a74ed627fb5bd393e347079514436a7.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
       <td style="text-align: left; vertical-align: middle; padding: 10px;">N/A</td>
     </tr>
   <tr>
@@ -836,22 +988,441 @@ Below are the official download links for various versions of Cursor AI, present
 </details>
 
 <details>
+<summary><b>Version 0.47.7</b> (2025-03-18)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.47.7 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/win32/x64/user-setup/CursorUserSetup-x64-0.47.7.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.7.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/33ec0dad159bc0ad620f6bbda539efe90c39748d/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.7-33ec0dad159bc0ad620f6bbda539efe90c39748d.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.7-33ec0dad159bc0ad620f6bbda539efe90c39748d.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.47.6</b> (2025-03-17)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.47.6 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/win32/x64/user-setup/CursorUserSetup-x64-0.47.6.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.6.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/6a1a6fbc55483584e7022f491c8a167ccac86f22/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.6-6a1a6fbc55483584e7022f491c8a167ccac86f22.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.6-6a1a6fbc55483584e7022f491c8a167ccac86f22.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.47.5</b> (2025-03-14)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.47.5 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/win32/x64/user-setup/CursorUserSetup-x64-0.47.5.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.5.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/53d6da1322f934a1058e7569ee0847b24879d18c/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.5-53d6da1322f934a1058e7569ee0847b24879d18c.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.5-53d6da1322f934a1058e7569ee0847b24879d18c.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.47.4</b> (2025-03-14)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.47.4 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/win32/x64/user-setup/CursorUserSetup-x64-0.47.4.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.4.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.4-8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.4-8f8a2000673d2c48f6cac5eea2f3f9f2ed5e4ec2.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.47.3</b> (2025-03-13)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.47.3 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/win32/x64/user-setup/CursorUserSetup-x64-0.47.3.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.3.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/dab1538cd064aebd4292f9de48b05022c974aff6/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.3-dab1538cd064aebd4292f9de48b05022c974aff6.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.3-dab1538cd064aebd4292f9de48b05022c974aff6.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.47.2</b> (2025-03-13)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.47.2 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/win32/x64/user-setup/CursorUserSetup-x64-0.47.2.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.2.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/bed609aa4a57e9d82664006f152d3f77589eed10/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.2-bed609aa4a57e9d82664006f152d3f77589eed10.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.2-bed609aa4a57e9d82664006f152d3f77589eed10.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.47.1</b> (2025-03-11)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.47.1 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/win32/x64/user-setup/CursorUserSetup-x64-0.47.1.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.1.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/aafb3fe1326c939656bd06f325a9e17679aeec7f/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.1-aafb3fe1326c939656bd06f325a9e17679aeec7f.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.1-aafb3fe1326c939656bd06f325a9e17679aeec7f.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.47.0</b> (2025-03-11)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.47.0 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/win32/x64/user-setup/CursorUserSetup-x64-0.47.0.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/win32/arm64/user-setup/CursorUserSetup-arm64-0.47.0.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/4a602340d7b014d700647120bae9079607f2ae9b/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.0-4a602340d7b014d700647120bae9079607f2ae9b.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/client/linux/arm64/appimage/Cursor-0.47.0-4a602340d7b014d700647120bae9079607f2ae9b.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
 <summary><b>Version 0.46.11</b> (2025-03-07)</summary>
 
 <div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
 <h3>Cursor 0.46.11 Download Links</h3>
 
 #### Windows
-<a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/windows/x64/Cursor-Setup-0.46.11.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
-<a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/windows/arm64/Cursor-Setup-0.46.11-arm64.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/win32/x64/user-setup/CursorUserSetup-x64-0.46.11.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.11.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
 
 #### macOS
-<a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/macos/universal/Cursor-0.46.11-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
-<a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/macos/x64/Cursor-0.46.11.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
-<a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/macos/arm64/Cursor-0.46.11-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
 
 #### Linux
-<a href="https://storage.googleapis.com/cursor-history-exe/v0.46.11/linux/x64/Cursor-0.46.11.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.11-ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.11-ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.10</b> (2025-03-06)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.10 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/7b3e0d45d4f952938dbd8e1e29c1b17003198481/win32/x64/user-setup/CursorUserSetup-x64-0.46.10.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/7b3e0d45d4f952938dbd8e1e29c1b17003198481/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.10.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/7b3e0d45d4f952938dbd8e1e29c1b17003198481/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/7b3e0d45d4f952938dbd8e1e29c1b17003198481/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/7b3e0d45d4f952938dbd8e1e29c1b17003198481/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.10-7b3e0d45d4f952938dbd8e1e29c1b17003198481.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.10-7b3e0d45d4f952938dbd8e1e29c1b17003198481.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.9</b> (2025-03-05)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.9 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3395357a4ee2975d5d03595e7607ee84e3db0f2c/win32/x64/user-setup/CursorUserSetup-x64-0.46.9.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3395357a4ee2975d5d03595e7607ee84e3db0f2c/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.9.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3395357a4ee2975d5d03595e7607ee84e3db0f2c/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3395357a4ee2975d5d03595e7607ee84e3db0f2c/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3395357a4ee2975d5d03595e7607ee84e3db0f2c/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.9-3395357a4ee2975d5d03595e7607ee84e3db0f2c.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.9-3395357a4ee2975d5d03595e7607ee84e3db0f2c.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.8</b> (2025-03-01)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.8 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/be4f0962469499f009005e66867c8402202ff0b7/win32/x64/user-setup/CursorUserSetup-x64-0.46.8.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/be4f0962469499f009005e66867c8402202ff0b7/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.8.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/be4f0962469499f009005e66867c8402202ff0b7/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/be4f0962469499f009005e66867c8402202ff0b7/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/be4f0962469499f009005e66867c8402202ff0b7/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.8-be4f0962469499f009005e66867c8402202ff0b7.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.8-be4f0962469499f009005e66867c8402202ff0b7.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.7</b> (2025-02-27)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.7 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3611c5390c448b242ab97e328493bb8ef7241e61/win32/x64/user-setup/CursorUserSetup-x64-0.46.7.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3611c5390c448b242ab97e328493bb8ef7241e61/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.7.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3611c5390c448b242ab97e328493bb8ef7241e61/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3611c5390c448b242ab97e328493bb8ef7241e61/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/3611c5390c448b242ab97e328493bb8ef7241e61/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.7-3611c5390c448b242ab97e328493bb8ef7241e61.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.7-3611c5390c448b242ab97e328493bb8ef7241e61.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.6</b> (2025-02-26)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.6 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/5ac4b6282478aa0f4d1bfc032412616523788843/win32/x64/user-setup/CursorUserSetup-x64-0.46.6.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/5ac4b6282478aa0f4d1bfc032412616523788843/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.6.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/5ac4b6282478aa0f4d1bfc032412616523788843/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/5ac4b6282478aa0f4d1bfc032412616523788843/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/5ac4b6282478aa0f4d1bfc032412616523788843/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.6-5ac4b6282478aa0f4d1bfc032412616523788843.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.6-5ac4b6282478aa0f4d1bfc032412616523788843.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.5</b> (2025-02-26)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.5 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/9fa6e431b47f723d1bac24802102dd2fd8ea72b0/win32/x64/user-setup/CursorUserSetup-x64-0.46.5.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/9fa6e431b47f723d1bac24802102dd2fd8ea72b0/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.5.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/9fa6e431b47f723d1bac24802102dd2fd8ea72b0/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/9fa6e431b47f723d1bac24802102dd2fd8ea72b0/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/9fa6e431b47f723d1bac24802102dd2fd8ea72b0/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.5-9fa6e431b47f723d1bac24802102dd2fd8ea72b0.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.5-9fa6e431b47f723d1bac24802102dd2fd8ea72b0.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.4</b> (2025-02-25)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.4 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/db71624816f6d52f6e54f47c37cdc7df23e22623/win32/x64/user-setup/CursorUserSetup-x64-0.46.4.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/db71624816f6d52f6e54f47c37cdc7df23e22623/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.4.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/db71624816f6d52f6e54f47c37cdc7df23e22623/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/db71624816f6d52f6e54f47c37cdc7df23e22623/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/db71624816f6d52f6e54f47c37cdc7df23e22623/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.4-db71624816f6d52f6e54f47c37cdc7df23e22623.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.4-db71624816f6d52f6e54f47c37cdc7df23e22623.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.3</b> (2025-02-25)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.3 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/fce3511bab261b4c986797f3e1e40e7621bbd012/win32/x64/user-setup/CursorUserSetup-x64-0.46.3.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/fce3511bab261b4c986797f3e1e40e7621bbd012/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.3.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/fce3511bab261b4c986797f3e1e40e7621bbd012/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/fce3511bab261b4c986797f3e1e40e7621bbd012/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/fce3511bab261b4c986797f3e1e40e7621bbd012/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.3-fce3511bab261b4c986797f3e1e40e7621bbd012.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.3-fce3511bab261b4c986797f3e1e40e7621bbd012.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.2</b> (2025-02-23)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.2 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/84b9c6d907219bb8c2874f299540eb6a079187ab/win32/x64/user-setup/CursorUserSetup-x64-0.46.2.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/84b9c6d907219bb8c2874f299540eb6a079187ab/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.2.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/84b9c6d907219bb8c2874f299540eb6a079187ab/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/84b9c6d907219bb8c2874f299540eb6a079187ab/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/84b9c6d907219bb8c2874f299540eb6a079187ab/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.2-84b9c6d907219bb8c2874f299540eb6a079187ab.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.2-84b9c6d907219bb8c2874f299540eb6a079187ab.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.1</b> (2025-02-23)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.1 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/69ce6c261e430e5be69213f1e721e50142477715/win32/x64/user-setup/CursorUserSetup-x64-0.46.1.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/69ce6c261e430e5be69213f1e721e50142477715/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.1.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/69ce6c261e430e5be69213f1e721e50142477715/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/69ce6c261e430e5be69213f1e721e50142477715/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/69ce6c261e430e5be69213f1e721e50142477715/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.1-69ce6c261e430e5be69213f1e721e50142477715.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.1-69ce6c261e430e5be69213f1e721e50142477715.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version 0.46.0</b> (2025-02-22)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 0.46.0 Download Links</h3>
+
+#### Windows
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/win32/x64/user-setup/CursorUserSetup-x64-0.46.0.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/win32/arm64/user-setup/CursorUserSetup-arm64-0.46.0.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/aff57e1d9a74ed627fb5bd393e347079514436a7/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-0.46.0-aff57e1d9a74ed627fb5bd393e347079514436a7.deb.glibc2.25-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/arm64/appimage/Cursor-0.46.0-aff57e1d9a74ed627fb5bd393e347079514436a7.deb.glibc2.28-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
 
 </div>
 </details>
