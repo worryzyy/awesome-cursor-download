@@ -47,7 +47,6 @@ npm run update
 ## 文件说明
 
 - `scripts/track-downloads.ts`: 主要脚本，负责获取最新链接并更新历史记录
-- `scripts/migrate-history.ts`: 用于迁移版本历史记录的辅助脚本
 - `cursor-version-archive.json`: 存储所有版本的下载链接历史
 - `README.md`: 包含所有版本下载链接的表格
 
@@ -55,27 +54,21 @@ npm run update
 
 下面提供了 Cursor AI 各版本的官方下载链接，多种视图方便您选择合适的版本。
 
-## 最新版本卡片
+## 最新版本
 
 <!-- LATEST_VERSION_CARD_START -->
 <div align="center">
 <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+<h1 style="text-align: center; margin-bottom: 0;">🚀 Cursor 0.48.6</h1>
+<p style="text-align: center; color: #666; margin-top: 10px; margin-bottom: 20px;">发布日期: 2025-03-31</p>
 
-<div style="background-color: #f8f9fa; border-radius: 10px; padding: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <h3 style="text-align: center; margin-top: 0;">🚀 Cursor 0.48.6</h3>
-  <p style="text-align: center; color: #666; margin-bottom: 15px;">发布日期: 2025-03-31</p>
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <div style="text-align: center; margin: 5px; min-width: 120px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></h4><a href="https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/win32/x64/user-setup/CursorUserSetup-x64-0.48.6.exe"><img src="https://img.shields.io/badge/x64-下载-blue?style=flat-square" alt="Windows x64"></a><br><a href="https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/win32/arm64/user-setup/CursorUserSetup-arm64-0.48.6.exe"><img src="https://img.shields.io/badge/ARM64-下载-blue?style=flat-square" alt="Windows ARM64"></a>
-    </div>
-    <div style="text-align: center; margin: 5px; min-width: 120px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS"></h4><a href="https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/通用-下载-black?style=flat-square" alt="macOS Universal"></a><br><a href="https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-下载-black?style=flat-square" alt="macOS Intel"></a><br><a href="https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M芯片-下载-black?style=flat-square" alt="macOS M1/M2/M3"></a>
-    </div>
-    <div style="text-align: center; margin: 5px; min-width: 120px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></h4><a href="https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/linux/x64/Cursor-0.48.6-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-下载-yellow?style=flat-square" alt="Linux x64"></a><br><a href="https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/linux/arm64/Cursor-0.48.6-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-下载-yellow?style=flat-square" alt="Linux ARM64"></a>
-</div>
-    </div>
-</div>
+| Windows | macOS | Linux |
+|:---:|:---:|:---:|
+| ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
+| [x64 下载](https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/win32/x64/user-setup/CursorUserSetup-x64-0.48.6.exe) | [通用版 下载](https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/darwin/universal/Cursor-darwin-universal.dmg) | [x64 下载](https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/linux/x64/Cursor-0.48.6-x86_64.AppImage) |
+| [ARM64 下载](https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/win32/arm64/user-setup/CursorUserSetup-arm64-0.48.6.exe) | [Intel 下载](https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/darwin/x64/Cursor-darwin-x64.dmg) | [ARM64 下载](https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/linux/arm64/Cursor-0.48.6-aarch64.AppImage) |
+|  | [M芯片 下载](https://downloads.cursor.com/production/7da827d66e9b56a846349698c70129a436421245/darwin/arm64/Cursor-darwin-arm64.dmg) |  |
+
 </div>
 </div>
 <!-- LATEST_VERSION_CARD_END -->

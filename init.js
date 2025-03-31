@@ -51,23 +51,7 @@ try {
   process.exit(1);
 }
 
-// 复制历史记录文件(如果存在)
-const sourceHistoryPath = path.join(__dirname, '..', 'cursor-version-archive.json');
-const targetHistoryPath = path.join(__dirname, 'cursor-version-archive.json');
 
-if (fs.existsSync(sourceHistoryPath) && !fs.existsSync(targetHistoryPath)) {
-  console.log(`${colors.yellow}正在迁移版本历史记录...${colors.reset}`);
-  try {
-    fs.copyFileSync(sourceHistoryPath, targetHistoryPath);
-    console.log(`${colors.green}版本历史记录迁移成功!${colors.reset}\n`);
-  } catch (error) {
-    console.log(`${colors.yellow}注意: 无法迁移版本历史记录文件. 将创建新的历史记录.${colors.reset}\n`);
-  }
-} else if (fs.existsSync(targetHistoryPath)) {
-  console.log(`${colors.green}版本历史记录文件已存在.${colors.reset}\n`);
-} else {
-  console.log(`${colors.yellow}未找到源版本历史记录文件. 将创建新的历史记录.${colors.reset}\n`);
-}
 
 /**
  * 添加HTML注释标记到README文件
@@ -94,7 +78,7 @@ function addMarkersToReadmeFiles() {
         name: 'Latest Version Card',
         startMarker: '<!-- LATEST_VERSION_CARD_START -->',
         endMarker: '<!-- LATEST_VERSION_CARD_END -->',
-        startRegex: /## (Latest Version Card|最新版本卡片)\s*\n\s*<div align="center">/,
+        startRegex: /## (Latest Version|最新版本)\s*\n\s*<div align="center">/,
         startReplacement: (match) => `${match.split('<div')[0]}\n${markers[0].startMarker}\n<div`,
         endRegex: /<\/div>\s*\n\s*<\/div>\s*\n\s*## (All Versions|所有版本)/,
         endReplacement: (match) => `</div>\n</div>\n${markers[0].endMarker}\n\n${match.split('##')[1].startsWith(' ') ? '#' : ''}# ${match.split('##')[1].trim()}`

@@ -311,7 +311,7 @@ function generateLatestVersionCard(
 
 	const isEnglish = language === 'en'
 	const downloadText = isEnglish ? 'Download' : '下载'
-	const universalText = isEnglish ? 'Universal' : '通用'
+	const universalText = isEnglish ? 'Universal' : '通用版'
 	const mChipText = isEnglish ? 'M_Chip' : 'M芯片'
 	const releaseDateText = isEnglish ? 'Release Date' : '发布日期'
 	const comingSoonText = isEnglish ? 'Coming Soon' : '即将推出'
@@ -326,70 +326,70 @@ function generateLatestVersionCard(
 	const hasLinux =
 		versionEntry.platforms['linux'] || versionEntry.platforms['linux_arm64']
 
-	let card = `
-<div style="background-color: #f8f9fa; border-radius: 10px; padding: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <h3 style="text-align: center; margin-top: 0;">🚀 Cursor ${versionEntry.version}</h3>
-  <p style="text-align: center; color: #666; margin-bottom: 15px;">${releaseDateText}: ${versionEntry.date}</p>
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">`
+	let card = `<h1 style="text-align: center; margin-bottom: 0;">🚀 Cursor ${versionEntry.version}</h1>
+<p style="text-align: center; color: #666; margin-top: 10px; margin-bottom: 20px;">${releaseDateText}: ${versionEntry.date}</p>
 
-	// Windows 平台卡片
-	card += `
-    <div style="text-align: center; margin: 5px; min-width: 120px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></h4>`
+`
+	
+	card += `| Windows | macOS | Linux |\n|:---:|:---:|:---:|\n`
+	
+	// 添加系统图标行
+	card += `| ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |\n`
 
+	// 准备每个平台的下载链接
+	let windowsLinks = []
+	let macLinks = []
+	let linuxLinks = []
+
+	// Windows 链接
 	if (hasWindows) {
 		if (versionEntry.platforms['windows']) {
-			card += `<a href="${versionEntry.platforms['windows'].url}"><img src="https://img.shields.io/badge/x64-${downloadText}-blue?style=flat-square" alt="Windows x64"></a><br>`
+			windowsLinks.push(`[x64 ${downloadText}](${versionEntry.platforms['windows'].url})`)
 		}
 		if (versionEntry.platforms['windows_arm64']) {
-			card += `<a href="${versionEntry.platforms['windows_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-${downloadText}-blue?style=flat-square" alt="Windows ARM64"></a>`
+			windowsLinks.push(`[ARM64 ${downloadText}](${versionEntry.platforms['windows_arm64'].url})`)
 		}
 	} else {
-		card += `<span style="color: #666; font-size: 12px;">${comingSoonText}</span>`
+		windowsLinks.push(comingSoonText)
 	}
-	card += `
-    </div>`
 
-	// macOS 平台卡片
-	card += `
-    <div style="text-align: center; margin: 5px; min-width: 120px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS"></h4>`
-
+	// macOS 链接
 	if (hasMac) {
 		if (versionEntry.platforms['mac']) {
-			card += `<a href="${versionEntry.platforms['mac'].url}"><img src="https://img.shields.io/badge/${universalText}-${downloadText}-black?style=flat-square" alt="macOS Universal"></a><br>`
+			macLinks.push(`[${universalText} ${downloadText}](${versionEntry.platforms['mac'].url})`)
 		}
 		if (versionEntry.platforms['mac_intel']) {
-			card += `<a href="${versionEntry.platforms['mac_intel'].url}"><img src="https://img.shields.io/badge/Intel-${downloadText}-black?style=flat-square" alt="macOS Intel"></a><br>`
+			macLinks.push(`[Intel ${downloadText}](${versionEntry.platforms['mac_intel'].url})`)
 		}
 		if (versionEntry.platforms['mac_arm64']) {
-			card += `<a href="${versionEntry.platforms['mac_arm64'].url}"><img src="https://img.shields.io/badge/${mChipText}-${downloadText}-black?style=flat-square" alt="macOS M1/M2/M3"></a>`
+			macLinks.push(`[${mChipText} ${downloadText}](${versionEntry.platforms['mac_arm64'].url})`)
 		}
 	} else {
-		card += `<span style="color: #666; font-size: 12px;">${comingSoonText}</span>`
+		macLinks.push(comingSoonText)
 	}
-	card += `
-    </div>`
 
-	// Linux 平台卡片
-	card += `
-    <div style="text-align: center; margin: 5px; min-width: 120px;">
-      <h4 style="margin: 5px 0;"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></h4>`
-
+	// Linux 链接
 	if (hasLinux) {
 		if (versionEntry.platforms['linux']) {
-			card += `<a href="${versionEntry.platforms['linux'].url}"><img src="https://img.shields.io/badge/x64-${downloadText}-yellow?style=flat-square" alt="Linux x64"></a><br>`
+			linuxLinks.push(`[x64 ${downloadText}](${versionEntry.platforms['linux'].url})`)
 		}
 		if (versionEntry.platforms['linux_arm64']) {
-			card += `<a href="${versionEntry.platforms['linux_arm64'].url}"><img src="https://img.shields.io/badge/ARM64-${downloadText}-yellow?style=flat-square" alt="Linux ARM64"></a>`
+			linuxLinks.push(`[ARM64 ${downloadText}](${versionEntry.platforms['linux_arm64'].url})`)
 		}
 	} else {
-		card += `<span style="color: #666; font-size: 12px;">${comingSoonText}</span>`
+		linuxLinks.push(comingSoonText)
 	}
-	card += `
-</div>
-    </div>
-</div>`
+
+	// 计算需要的行数
+	const maxRows = Math.max(windowsLinks.length, macLinks.length, linuxLinks.length)
+
+	// 添加下载链接行
+	for (let i = 0; i < maxRows; i++) {
+		card += '| ' +
+			(windowsLinks[i] || '') + ' | ' +
+			(macLinks[i] || '') + ' | ' +
+			(linuxLinks[i] || '') + ' |\n'
+	}
 
 	return card
 }
