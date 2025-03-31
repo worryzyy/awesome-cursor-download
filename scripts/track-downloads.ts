@@ -11,7 +11,7 @@ import fetch from 'node-fetch'
  * 同时会更新 README.md 文件，在其中生成下载链接表格。
  */
 
-// Get dirname in ESM
+// 在 ESM 中获取 dirname
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
@@ -74,21 +74,19 @@ const PLATFORMS: PlatformMap = {
 }
 
 /**
- * Extract version from URL or filename
+ * 从URL或文件名中提取版本号
  */
 async function extractVersion(url: string): Promise<string> {
-	// For Windows
+	// Windows系统
 	const winMatch = url.match(/CursorUserSetup-[^-]+-([0-9.]+)\.exe/)
 	if (winMatch && winMatch[1]) return winMatch[1]
 
-	// For Linux
+	// Linux系统
 	const linuxMatch = url.match(/Cursor-([0-9.]+)-/)
 	if (linuxMatch && linuxMatch[1]) return linuxMatch[1]
 
-	// For Mac - 匹配 darwin/universal/Cursor-darwin-universal-version.dmg 模式
-	const macVersionMatch = url.match(
-		/darwin\/[^\/]+\/Cursor-darwin-[^-]+-([0-9.]+)\.dmg/
-	)
+	// Mac系统 - 匹配 darwin/universal/Cursor-darwin-universal-version.dmg 模式
+	const macVersionMatch = url.match(/darwin\/[^\/]+\/Cursor-darwin-[^-]+-([0-9.]+)\.dmg/)
 	if (macVersionMatch && macVersionMatch[1]) {
 		return macVersionMatch[1]
 	}
@@ -101,10 +99,7 @@ async function extractVersion(url: string): Promise<string> {
 			const buildHash = buildHashMatch[1]
 
 			// 首先检查其他平台的版本
-			const historyPath = path.join(
-				process.cwd(),
-				'cursor-version-archive.json'
-			)
+			const historyPath = path.join(process.cwd(), 'cursor-version-archive.json')
 			if (fs.existsSync(historyPath)) {
 				try {
 					const jsonData = fs.readFileSync(historyPath, 'utf8')
@@ -124,9 +119,6 @@ async function extractVersion(url: string): Promise<string> {
 					// 出错时继续后续处理
 				}
 			}
-
-			// 如果找不到匹配的哈希，尝试简单的版本模式匹配
-			// 由于异步操作复杂性，不再动态获取其他平台版本
 		}
 	}
 
@@ -136,7 +128,7 @@ async function extractVersion(url: string): Promise<string> {
 }
 
 /**
- * Format date as YYYY-MM-DD
+ * 将日期格式化为 YYYY-MM-DD
  */
 function formatDate(date: Date): string {
 	const year = date.getFullYear()
@@ -146,13 +138,11 @@ function formatDate(date: Date): string {
 }
 
 /**
- * Fetch latest download URL for a platform
+ * 获取指定平台的最新下载链接
  */
-async function fetchLatestDownloadUrl(
-	platform: string
-): Promise<string | null> {
+async function fetchLatestDownloadUrl(platform: string): Promise<string | null> {
 	try {
-		// Simple fetch without complex retry logic
+		// 简单的获取，无复杂重试逻辑
 		const controller = new AbortController()
 		const timeoutId = setTimeout(() => controller.abort(), 10000)
 
@@ -170,22 +160,22 @@ async function fetchLatestDownloadUrl(
 		clearTimeout(timeoutId)
 
 		if (!response.ok) {
-			throw new Error(`HTTP error! status: ${response.status}`)
+			throw new Error(`HTTP错误! 状态码: ${response.status}`)
 		}
 
 		const data = (await response.json()) as DownloadResponse
 		return data.downloadUrl
 	} catch (error) {
 		console.error(
-			`Error fetching download URL for platform ${platform}:`,
-			error instanceof Error ? error.message : 'Unknown error'
+			`获取平台 ${platform} 的下载链接时出错:`,
+			error instanceof Error ? error.message : '未知错误'
 		)
 		return null
 	}
 }
 
 /**
- * Read version history from JSON file
+ * 从JSON文件中读取版本历史
  */
 function readVersionHistory(): VersionHistory {
 	const historyPath = path.join(process.cwd(), 'cursor-version-archive.json')
@@ -229,7 +219,7 @@ function sortVersionHistory(history: VersionHistory): VersionHistory {
 }
 
 /**
- * Save version history to JSON file
+ * 将版本历史保存到JSON文件
  */
 function saveVersionHistory(history: VersionHistory): void {
 	if (!history || typeof history !== 'object') {
@@ -252,11 +242,11 @@ function saveVersionHistory(history: VersionHistory): void {
 }
 
 /**
- * Update README files with the latest version information
+ * 使用最新版本信息更新README文件
  */
 function updateReadmeWithLinks(history: VersionHistory): void {
 	if (!history || Object.keys(history).length === 0) {
-		console.error('No version history available to update README')
+		console.error('没有可用的版本历史来更新README')
 		return
 	}
 
@@ -265,40 +255,28 @@ function updateReadmeWithLinks(history: VersionHistory): void {
 	const englishReadmePath = path.join(rootPath, 'README.md')
 	const chineseReadmePath = path.join(rootPath, 'README_CN.md')
 
-	// Sort versions by date (newest first)
-	const versions = Object.keys(history)
-	const versionsWithDates = versions.map((version) => ({
+	// 获取排序后的版本列表
+	const sortedHistory = sortVersionHistory(history)
+	const versionsWithDates = Object.entries(sortedHistory).map(([version, entry]) => ({
 		version,
-		date: history[version].date,
-		platforms: history[version].platforms
+		date: entry.date,
+		platforms: entry.platforms
 	}))
 
-	const sortedVersions = [...versionsWithDates].sort((a, b) => {
-		const dateA = new Date(a.date).getTime()
-		const dateB = new Date(b.date).getTime()
-		return dateB - dateA
-	})
-
 	// 生成最新版本卡片 - 英文
-	const latestVersionCard_EN = generateLatestVersionCard(
-		sortedVersions[0],
-		'en'
-	)
+	const latestVersionCard_EN = generateLatestVersionCard(versionsWithDates[0], 'en')
 	// 生成最新版本卡片 - 中文
-	const latestVersionCard_CN = generateLatestVersionCard(
-		sortedVersions[0],
-		'cn'
-	)
+	const latestVersionCard_CN = generateLatestVersionCard(versionsWithDates[0], 'cn')
 
 	// 生成版本表格 - 英文
-	const versionTable_EN = generateVersionTable(sortedVersions, 'en')
+	const versionTable_EN = generateVersionTable(versionsWithDates, 'en')
 	// 生成版本表格 - 中文
-	const versionTable_CN = generateVersionTable(sortedVersions, 'cn')
+	const versionTable_CN = generateVersionTable(versionsWithDates, 'cn')
 
 	// 生成详细卡片视图 - 英文
-	const detailedCards_EN = generateDetailedCards(sortedVersions, 'en')
+	const detailedCards_EN = generateDetailedCards(versionsWithDates, 'en')
 	// 生成详细卡片视图 - 中文
-	const detailedCards_CN = generateDetailedCards(sortedVersions, 'cn')
+	const detailedCards_CN = generateDetailedCards(versionsWithDates, 'cn')
 
 	// 更新英文README
 	updateReadmeFile(englishReadmePath, {
@@ -314,13 +292,11 @@ function updateReadmeWithLinks(history: VersionHistory): void {
 		detailedCards: detailedCards_CN
 	})
 
-	console.log(
-		'README.md and README_CN.md have been updated with latest version information'
-	)
+	console.log('README.md 和 README_CN.md 已使用最新版本信息更新')
 }
 
 /**
- * Generate latest version card HTML
+ * 生成最新版本卡片的HTML
  */
 function generateLatestVersionCard(
 	versionEntry: any,
@@ -414,7 +390,7 @@ function generateLatestVersionCard(
 }
 
 /**
- * Generate version table HTML
+ * 生成版本表格的HTML
  */
 function generateVersionTable(
 	versions: any[],
@@ -493,7 +469,7 @@ function generateVersionTable(
 }
 
 /**
- * Generate detailed cards view HTML
+ * 生成详细卡片视图的HTML
  */
 function generateDetailedCards(
 	versions: any[],
@@ -556,7 +532,7 @@ function generateDetailedCards(
 }
 
 /**
- * Update README file with content markers
+ * 使用内容标记更新README文件
  */
 function updateReadmeFile(
 	filePath: string,
@@ -706,45 +682,45 @@ function updateReadmeFile(
 }
 
 /**
- * Main function to gather all download URLs and update files
+ * 主函数：收集所有下载链接并更新文件
  */
 async function main() {
-	console.log('Starting Cursor download link updater...')
+	console.log('启动Cursor下载链接更新器...')
 
 	// 检查是否有强制更新参数
 	const forceUpdate = process.argv.includes('--force')
 
-	// Read existing version history
+	// 读取现有版本历史
 	const history = readVersionHistory()
 
-	// 处理当前历史记录中的 Unknown 版本
+	// 处理当前历史记录中的Unknown版本
 	await processUnknownVersions(history)
 
-	// Track new versions found
+	// 跟踪发现的新版本
 	const results: ResultMap = {
 		windows: {},
 		mac: {},
 		linux: {}
 	}
 
-	// Current date for new entries
+	// 新条目使用当前日期
 	const today = formatDate(new Date())
 
-	// Fetch latest download URLs for all platforms
-	console.log('Fetching latest download URLs...')
+	// 获取所有平台的最新下载链接
+	console.log('获取最新下载链接...')
 
 	// 获取所有平台的下载链接
 	for (const [os, info] of Object.entries(PLATFORMS)) {
 		for (const platform of info.platforms) {
-			console.log(`Fetching download URL for ${platform}...`)
+			console.log(`获取 ${platform} 的下载链接...`)
 			const url = await fetchLatestDownloadUrl(platform)
 
 			if (url) {
 				const version = await extractVersion(url)
-				console.log(`Found version ${version} for ${platform}: ${url}`)
+				console.log(`发现版本 ${version} 用于 ${platform}: ${url}`)
 				results[os as keyof ResultMap][platform] = { url, version }
 			} else {
-				console.log(`Failed to fetch download URL for ${platform}`)
+				console.log(`获取 ${platform} 的下载链接失败`)
 			}
 		}
 	}
@@ -752,7 +728,7 @@ async function main() {
 	// 预处理结果 - 尝试统一版本号
 	await unifyVersionNumbers(results)
 
-	// Check for new versions and update history
+	// 检查新版本并更新历史记录
 	let newVersionsFound = false
 
 	// 平台映射表，从旧平台名称映射到新格式
@@ -766,7 +742,7 @@ async function main() {
 		'linux-arm64': 'linux_arm64'
 	}
 
-	// Process each OS and platform
+	// 处理每个操作系统和平台
 	for (const [os, platforms] of Object.entries(results)) {
 		for (const [platform, info] of Object.entries(platforms)) {
 			const { url, version } = info
@@ -774,12 +750,12 @@ async function main() {
 			// 转换平台名称到新格式
 			const newPlatformName = platformMapping[platform] || platform
 
-			// Check if we already have this version
+			// 检查是否已有此版本
 			let versionEntry = history[version]
 
 			if (!versionEntry) {
-				// New version found
-				console.log(`Adding new version ${version} to history`)
+				// 发现新版本
+				console.log(`添加新版本 ${version} 到历史记录`)
 				versionEntry = {
 					date: today,
 					platforms: {}
@@ -791,12 +767,12 @@ async function main() {
 			// 构建哈希用于checksum值
 			const buildHash = url.match(/production\/([a-f0-9]+)\//)?.[1] || ''
 
-			// Update or add the platform URL
+			// 更新或添加平台URL
 			if (
 				!versionEntry.platforms[newPlatformName] ||
 				versionEntry.platforms[newPlatformName].url !== url
 			) {
-				console.log(`Updating ${newPlatformName} URL for version ${version}`)
+				console.log(`更新版本 ${version} 的 ${newPlatformName} URL`)
 				versionEntry.platforms[newPlatformName] = {
 					url,
 					checksum: buildHash
@@ -806,21 +782,21 @@ async function main() {
 		}
 	}
 
-	// Save updates if any new versions found
+	// 如果发现新版本则保存更新
 	if (newVersionsFound) {
-		console.log('Saving updated version history...')
+		console.log('保存更新的版本历史...')
 		saveVersionHistory(history)
 
-		console.log('Updating README with new download links...')
+		console.log('使用新的下载链接更新README...')
 		updateReadmeWithLinks(history)
 	} else if (forceUpdate) {
-		console.log('No new versions found, but force updating README...')
+		console.log('未发现新版本，但强制更新README...')
 		updateReadmeWithLinks(history)
 	} else {
-		console.log('No new versions found, no updates needed')
+		console.log('未发现新版本，无需更新')
 	}
 
-	console.log('Done!')
+	console.log('完成！')
 }
 
 /**
@@ -832,12 +808,12 @@ async function processUnknownVersions(history: VersionHistory): Promise<void> {
 	)
 	if (unknownVersions.length === 0) return
 
-	console.log('Found Unknown version entries, attempting to merge...')
+	console.log('发现未知版本条目，尝试合并...')
 
 	// 当前日期用于新条目
 	const today = formatDate(new Date())
 
-	// 首先尝试将 Unknown 版本的平台链接合并到相同构建哈希的已知版本中
+	// 首先尝试将未知版本的平台链接合并到相同构建哈希的已知版本中
 	for (const unknownVersion of unknownVersions) {
 		// 从第一个平台URL获取构建哈希
 		const platformUrls = Object.values(history[unknownVersion].platforms).map(
@@ -859,7 +835,7 @@ async function processUnknownVersions(history: VersionHistory): Promise<void> {
 
 		if (targetVersion) {
 			console.log(
-				`Merging Unknown version with build hash ${buildHash} into version ${targetVersion}`
+				`将构建哈希为 ${buildHash} 的未知版本合并到版本 ${targetVersion}`
 			)
 			// 合并平台链接
 			for (const [platform, platformInfo] of Object.entries(
@@ -867,7 +843,7 @@ async function processUnknownVersions(history: VersionHistory): Promise<void> {
 			)) {
 				if (!history[targetVersion].platforms[platform]) {
 					history[targetVersion].platforms[platform] = platformInfo
-					console.log(`- Added ${platform} to version ${targetVersion}`)
+					console.log(`- 已将 ${platform} 添加到版本 ${targetVersion}`)
 				}
 			}
 		} else {
@@ -876,7 +852,7 @@ async function processUnknownVersions(history: VersionHistory): Promise<void> {
 				const extractedVersion = await extractVersion(url)
 				if (extractedVersion !== 'Unknown') {
 					console.log(
-						`Extracted version ${extractedVersion} from Unknown entry URL`
+						`从未知条目URL中提取到版本 ${extractedVersion}`
 					)
 					// 创建新版本条目并合并平台
 					if (!history[extractedVersion]) {
@@ -885,7 +861,7 @@ async function processUnknownVersions(history: VersionHistory): Promise<void> {
 							platforms: {}
 						}
 					}
-					// 将Unknown版本的平台链接复制到提取的版本中
+					// 将未知版本的平台链接复制到提取的版本中
 					for (const [platform, platformInfo] of Object.entries(
 						history[unknownVersion].platforms
 					)) {
@@ -899,13 +875,13 @@ async function processUnknownVersions(history: VersionHistory): Promise<void> {
 		}
 	}
 
-	// 再次过滤，确保我们只删除仍然标记为 Unknown 的条目
+	// 再次过滤，确保我们只删除仍然标记为未知的条目
 	const remainingUnknown = Object.keys(history).filter(
 		(version) => version === 'Unknown'
 	)
 	if (remainingUnknown.length > 0) {
 		console.log(
-			`Removing ${remainingUnknown.length} unresolved Unknown version entries`
+			`删除 ${remainingUnknown.length} 个无法解析的未知版本条目`
 		)
 		for (const unknownVersion of remainingUnknown) {
 			delete history[unknownVersion]
@@ -917,7 +893,7 @@ async function processUnknownVersions(history: VersionHistory): Promise<void> {
  * 尝试统一结果中的版本号
  */
 async function unifyVersionNumbers(results: ResultMap): Promise<void> {
-	// 首先收集所有非Unknown版本
+	// 首先收集所有非未知版本
 	const nonUnknownVersions = new Set<string>()
 
 	for (const platforms of Object.values(results)) {
@@ -928,10 +904,10 @@ async function unifyVersionNumbers(results: ResultMap): Promise<void> {
 		}
 	}
 
-	// 如果只有一个非Unknown版本，将所有Unknown版本设置为该版本
+	// 如果只有一个非未知版本，将所有未知版本设置为该版本
 	if (nonUnknownVersions.size === 1) {
 		const version = Array.from(nonUnknownVersions)[0]
-		console.log(`Using consistent version ${version} for all platforms`)
+		console.log(`对所有平台使用统一版本 ${version}`)
 
 		for (const platforms of Object.values(results)) {
 			for (const info of Object.values(platforms)) {
@@ -941,14 +917,14 @@ async function unifyVersionNumbers(results: ResultMap): Promise<void> {
 			}
 		}
 	}
-	// 如果有多个非Unknown版本，尝试基于构建哈希统一
+	// 如果有多个非未知版本，尝试基于构建哈希统一
 	else if (nonUnknownVersions.size > 1) {
 		console.log(
-			`Multiple version numbers found: ${Array.from(nonUnknownVersions).join(
+			`发现多个版本号: ${Array.from(nonUnknownVersions).join(
 				', '
 			)}`
 		)
-		console.log('Attempting to unify based on build hash...')
+		console.log('尝试基于构建哈希统一版本...')
 
 		// 按构建哈希分组
 		const hashGroups: Record<string, { version: string; count: number }> = {}
@@ -978,7 +954,7 @@ async function unifyVersionNumbers(results: ResultMap): Promise<void> {
 					if (hashMatch && hashMatch[1] && hashGroups[hashMatch[1]]) {
 						info.version = hashGroups[hashMatch[1]].version
 						console.log(
-							`Updated Unknown version to ${info.version} based on build hash ${hashMatch[1]}`
+							`基于构建哈希 ${hashMatch[1]} 将未知版本更新为 ${info.version}`
 						)
 					}
 				}
@@ -987,11 +963,8 @@ async function unifyVersionNumbers(results: ResultMap): Promise<void> {
 	}
 }
 
-// Execute main function
+// 执行主函数
 main().catch((error) => {
-	console.error(
-		'Unhandled error:',
-		error instanceof Error ? error.message : 'Unknown error'
-	)
+	console.error('未处理的错误:', error instanceof Error ? error.message : '未知错误')
 	process.exit(1)
 })
