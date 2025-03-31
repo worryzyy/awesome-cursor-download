@@ -1,6 +1,6 @@
 {
   "0.48.5": {
-    "date": "2025-03-30",
+    "date": "2025-03-31",
     "platforms": {
       "windows": {
         "url": "https://downloads.cursor.com/production/ec8ef865575596e5c64d3b6cf9a933b93ad4ac02/win32/x64/user-setup/CursorUserSetup-x64-0.48.5.exe",
@@ -30,7 +30,8 @@
         "url": "https://downloads.cursor.com/production/ec8ef865575596e5c64d3b6cf9a933b93ad4ac02/linux/arm64/Cursor-0.48.5-aarch64.AppImage",
         "checksum": "ec8ef865575596e5c64d3b6cf9a933b93ad4ac02"
       }
-    }
+    },
+    "changelog": "Change management for Cmd+Backspace -> Cmd+Shift+Backspace"
   },
   "0.48.4": {
     "date": "2025-03-29",
