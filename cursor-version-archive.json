@@ -3,11 +3,11 @@
     "date": "2025-04-02",
     "platforms": {
       "windows": {
-        "url": "https://downloads.cursor.com/production/66290080aae40d23364ba2371832bda0933a3641/win32/x64/user-setup/CursorUserSetup-x64-0.48.7.exe",
+        "url": "https://downloads.cursor.com/production/66290080aae40d23364ba2371832bda0933a3641/win32/x64/system-setup/CursorSetup-x64-0.48.7.exe",
         "checksum": "66290080aae40d23364ba2371832bda0933a3641"
       },
       "windows_arm64": {
-        "url": "https://downloads.cursor.com/production/66290080aae40d23364ba2371832bda0933a3641/win32/arm64/user-setup/CursorUserSetup-arm64-0.48.7.exe",
+        "url": "https://downloads.cursor.com/production/66290080aae40d23364ba2371832bda0933a3641/win32/arm64/system-setup/CursorSetup-arm64-0.48.7.exe",
         "checksum": "66290080aae40d23364ba2371832bda0933a3641"
       },
       "mac": {
