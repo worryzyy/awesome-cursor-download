@@ -1,4 +1,38 @@
 {
+  "0.48.8": {
+    "date": "2025-04-07",
+    "platforms": {
+      "windows": {
+        "url": "https://downloads.cursor.com/production/7801a556824585b7f2721900066bc87c4a09b743/win32/x64/system-setup/CursorSetup-x64-0.48.8.exe",
+        "checksum": "7801a556824585b7f2721900066bc87c4a09b743"
+      },
+      "windows_arm64": {
+        "url": "https://downloads.cursor.com/production/7801a556824585b7f2721900066bc87c4a09b743/win32/arm64/system-setup/CursorSetup-arm64-0.48.8.exe",
+        "checksum": "7801a556824585b7f2721900066bc87c4a09b743"
+      },
+      "mac": {
+        "url": "https://downloads.cursor.com/production/7801a556824585b7f2721900066bc87c4a09b743/darwin/universal/Cursor-darwin-universal.dmg",
+        "checksum": "7801a556824585b7f2721900066bc87c4a09b743"
+      },
+      "mac_intel": {
+        "url": "https://downloads.cursor.com/production/7801a556824585b7f2721900066bc87c4a09b743/darwin/x64/Cursor-darwin-x64.dmg",
+        "checksum": "7801a556824585b7f2721900066bc87c4a09b743"
+      },
+      "mac_arm64": {
+        "url": "https://downloads.cursor.com/production/7801a556824585b7f2721900066bc87c4a09b743/darwin/arm64/Cursor-darwin-arm64.dmg",
+        "checksum": "7801a556824585b7f2721900066bc87c4a09b743"
+      },
+      "linux": {
+        "url": "https://downloads.cursor.com/production/7801a556824585b7f2721900066bc87c4a09b743/linux/x64/Cursor-0.48.8-x86_64.AppImage",
+        "checksum": "7801a556824585b7f2721900066bc87c4a09b743"
+      },
+      "linux_arm64": {
+        "url": "https://downloads.cursor.com/production/7801a556824585b7f2721900066bc87c4a09b743/linux/arm64/Cursor-0.48.8-aarch64.AppImage",
+        "checksum": "7801a556824585b7f2721900066bc87c4a09b743"
+      }
+    },
+    "changelog": "N/A"
+  },
   "0.48.7": {
     "date": "2025-04-02",
     "platforms": {
