@@ -31,7 +31,7 @@
         "checksum": "7801a556824585b7f2721900066bc87c4a09b743"
       }
     },
-    "changelog": "N/A"
+    "changelog": "Improves CPU performance from @-symbols search"
   },
   "0.48.7": {
     "date": "2025-04-02",
@@ -65,7 +65,7 @@
         "checksum": "1d623c4cc1d3bb6e0fe4f1d5434b47b958b05876"
       }
     },
-    "changelog": "N/A"
+    "changelog": "Fixes an issue where some chats could get deleted on update"
   },
   "0.48.6": {
     "date": "2025-03-31",
@@ -99,7 +99,7 @@
         "checksum": "1649e229afdef8fd1d18ea173f063563f1e722ef"
       }
     },
-    "changelog": "N/A"
+    "changelog": "Creates a new chat after the AI Pane has been closed for long enough"
   },
   "0.48.5": {
     "date": "2025-03-31",

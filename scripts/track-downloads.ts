@@ -748,8 +748,20 @@ async function main() {
 	const history = readVersionHistory()
   
 	// 获取更新日志
-	console.log('获取更新日志...')
 	const changelogs = await fetchChangelog()
+	// console.log('获取到的更新日志:', changelogs)
+  
+  // 跟踪是否发现新版本或更新
+  let newVersionsFound = false
+  
+  // 更新现有版本的更新日志
+  for (const [version, entry] of Object.entries(history)) {
+    if (changelogs[version] && (!entry.changelog || entry.changelog === 'N/A')) {
+      console.log(`更新版本 ${version} 的更新日志`)
+      entry.changelog = changelogs[version]
+      newVersionsFound = true
+    }
+  }
   
 	// 处理当前历史记录中的Unknown版本
 	await processUnknownVersions(history)
@@ -763,23 +775,6 @@ async function main() {
   
 	// 新条目使用当前日期
 	const today = formatDate(new Date())
-  
-	/**
-   * 判断版本号是否大于等于0.46.1
-   */
-  function isVersionGreaterThanOrEqual(version: string, targetVersion: string = '0.46.1'): boolean {
-    const versionParts = version.split('.').map(Number)
-    const targetParts = targetVersion.split('.').map(Number)
-    
-    for (let i = 0; i < Math.max(versionParts.length, targetParts.length); i++) {
-      const vPart = versionParts[i] || 0
-      const tPart = targetParts[i] || 0
-      if (vPart !== tPart) {
-        return vPart > tPart
-      }
-    }
-    return true // 相等的情况返回true
-  }
   
 	// 获取所有平台的最新下载链接
 	console.log('获取最新下载链接...')
@@ -803,10 +798,7 @@ async function main() {
 	// 预处理结果 - 尝试统一版本号
 	await unifyVersionNumbers(results)
   
-	// 检查新版本并更新历史记录
-	let newVersionsFound = false
-  
-  // 平台映射表，从旧平台名称映射到新格式
+	// 平台映射表，从旧平台名称映射到新格式
   const platformMapping: Record<string, string> = {
     'win32-x64': 'windows',
     'win32-arm64': 'windows_arm64',
@@ -834,19 +826,11 @@ async function main() {
         versionEntry = {
           date: today,
           platforms: {},
-          // 只为0.46.1及以后的版本添加更新日志
-          changelog: isVersionGreaterThanOrEqual(version) ? (changelogs[version] || 'N/A') : 'X'
+          // 添加更新日志（如果有）
+          changelog: changelogs[version] || 'N/A'
 				}
 				history[version] = versionEntry
 				newVersionsFound = true
-      } else if (!versionEntry.changelog && isVersionGreaterThanOrEqual(version)) {
-        // 如果是0.46.1及以后的版本且没有更新日志，添加更新日志
-        versionEntry.changelog = changelogs[version] || 'N/A'
-        newVersionsFound = true
-      } else if (!versionEntry.changelog) {
-        // 如果是早期版本且没有更新日志，设置为X
-        versionEntry.changelog = 'X'
-        newVersionsFound = true
       }
       
       // 构建哈希用于checksum值
