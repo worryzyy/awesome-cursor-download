@@ -798,6 +798,14 @@ Below are the official download links for various versions of Cursor AI, present
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://storage.googleapis.com/cursor-history-exe/v0.36.2/linux/x64/Cursor-0.36.2.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a></td>
       <td style="text-align: left; vertical-align: middle; padding: 10px;">N/A</td>
     </tr>
+  <tr>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">Unknown</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-04-16</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">N/A</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/88a47f0edd42a2ba73afb018ada9fe9eda7df75f/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/88a47f0edd42a2ba73afb018ada9fe9eda7df75f/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/88a47f0edd42a2ba73afb018ada9fe9eda7df75f/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">N/A</td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">N/A</td>
+    </tr>
 </table>
 <!-- VERSION_TABLE_END -->
 </div>
@@ -2624,6 +2632,24 @@ Below are the official download links for various versions of Cursor AI, present
 
 #### Linux
 <a href="https://storage.googleapis.com/cursor-history-exe/v0.36.2/linux/x64/Cursor-0.36.2.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+
+</div>
+</details>
+
+<details>
+<summary><b>Version Unknown</b> (2025-04-16)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor Unknown Download Links</h3>
+
+#### Windows
+
+#### macOS
+<a href="https://downloads.cursor.com/production/88a47f0edd42a2ba73afb018ada9fe9eda7df75f/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/88a47f0edd42a2ba73afb018ada9fe9eda7df75f/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/88a47f0edd42a2ba73afb018ada9fe9eda7df75f/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
 
 </div>
 </details>
