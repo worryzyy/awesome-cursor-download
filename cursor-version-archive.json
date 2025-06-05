@@ -31,7 +31,7 @@
         "checksum": "53b99ce608cba35127ae3a050c1738a959750865"
       }
     },
-    "changelog": "N/A"
+     "changelog": "Automatic code review with BugBot;Background Agent for everyone;Agent in Jupyter Notebooks;Memories;MCP one-click install and OAuth support;Richer Chat responses;New Settings and Dashboard"
   },
   "0.51.2": {
     "date": "2025-06-03",
