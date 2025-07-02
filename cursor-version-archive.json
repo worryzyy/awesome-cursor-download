@@ -65,9 +65,9 @@
         "checksum": "7111807980fa9c93aedd455ffa44b682c0dc1356"
       }
     },
-    "changelog": "N/A"
+    "changelog": "Small bug fixes and performance improvements"
   },
-  "1.1.6": {
+    "1.1.6": {
     "date": "2025-06-25",
     "platforms": {
       "windows": {
@@ -99,7 +99,7 @@
         "checksum": "5b19bac7a947f54e4caa3eb7e4c5fbf832389853"
       }
     },
-    "changelog": "N/A"
+    "changelog": "Fixed an agent latency regression that occurs for users using Remote SSH"
   },
   "1.1.5": {
     "date": "2025-06-21",
@@ -133,9 +133,9 @@
         "checksum": "ef5eeb47a684b4c217dfaf0463aa7ea952f8ab95"
       }
     },
-    "changelog": "N/A"
+    "changelog": "Small performance improvements"
   },
-  "1.1.4": {
+      "1.1.4": {
     "date": "2025-06-19",
     "platforms": {
       "windows": {
@@ -167,9 +167,9 @@
         "checksum": "e86fcc937643bc6385aebd982c1c66012c98caec"
       }
     },
-    "changelog": "N/A"
+    "changelog": "Improved Background Agent reliability;Fixed search in Chat UI bug"
   },
-  "1.1.3": {
+"1.1.3": {
     "date": "2025-06-15",
     "platforms": {
       "windows": {
@@ -201,9 +201,9 @@
         "checksum": "979ba33804ac150108481c14e0b5cb970bda3266"
       }
     },
-    "changelog": "N/A"
+    "changelog": "Fixed MCP performance regression;Added PR search and indexing;Improved deeplink experience;Added option to change upstream marketplace provider"
   },
-  "1.1.2": {
+"1.1.2": {
     "date": "2025-06-13",
     "platforms": {
       "windows": {
@@ -235,7 +235,7 @@
         "checksum": "87ea1604be1f602f173c5fb67582e647fcef6c48"
       }
     },
-    "changelog": "N/A"
+    "changelog": "Improved client side performance"
   },
   "1.1.1": {
     "date": "2025-06-12",
@@ -269,7 +269,7 @@
         "checksum": "f81622395bb52bc30ed251a6299eeaf51ab49110"
       }
     },
-    "changelog": "N/A"
+    "changelog": "Fixed workspaces indexing issue"
   },
   "1.1.0": {
     "date": "2025-06-12",
@@ -305,7 +305,7 @@
     },
     "changelog": "N/A"
   },
-  "1.0.1": {
+    "1.0.1": {
     "date": "2025-06-07",
     "platforms": {
       "windows": {
@@ -340,7 +340,7 @@
     "changelog": "N/A"
   },
   "1.0.0": {
-    "date": "2025-06-04",
+    "date": "2025-06-05",
     "platforms": {
       "windows": {
         "url": "https://downloads.cursor.com/production/53b99ce608cba35127ae3a050c1738a959750865/win32/x64/system-setup/CursorSetup-x64-1.0.0.exe",
@@ -373,7 +373,7 @@
     },
     "changelog": "Automatic code review with BugBot;Background Agent for everyone;Agent in Jupyter Notebooks;Memories;MCP one-click install and OAuth support;Richer Chat responses;New Settings and Dashboard"
   },
-  "0.51.2": {
+    "0.51.2": {
     "date": "2025-06-03",
     "platforms": {
       "windows": {
@@ -506,8 +506,7 @@
         "url": "https://downloads.cursor.com/production/02270c8441bdc4b2fdbc30e6f470a589ec78d60d/linux/arm64/Cursor-0.50.7-aarch64.AppImage",
         "checksum": "02270c8441bdc4b2fdbc30e6f470a589ec78d60d"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.50.6": {
     "date": "2025-05-23",
@@ -540,8 +539,7 @@
         "url": "https://downloads.cursor.com/production/f3f2ad556456ff2df80332923bb1e2a818110d1b/linux/arm64/Cursor-0.50.6-aarch64.AppImage",
         "checksum": "f3f2ad556456ff2df80332923bb1e2a818110d1b"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.50.5": {
     "date": "2025-05-18",
@@ -574,8 +572,7 @@
         "url": "https://downloads.cursor.com/production/96e5b01ca25f8fbd4c4c10bc69b15f6228c80771/linux/arm64/Cursor-0.50.5-aarch64.AppImage",
         "checksum": "96e5b01ca25f8fbd4c4c10bc69b15f6228c80771"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.50.4": {
     "date": "2025-05-14",
@@ -608,8 +605,7 @@
         "url": "https://downloads.cursor.com/production/8ea935e79a50a02da912a034bbeda84a6d3d355d/linux/arm64/Cursor-0.50.4-aarch64.AppImage",
         "checksum": "8ea935e79a50a02da912a034bbeda84a6d3d355d"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.50.3": {
     "date": "2025-05-13",
@@ -642,8 +638,7 @@
         "url": "https://downloads.cursor.com/production/7ae22cf8cd5af9e08b62585dd03d10f5f610acf9/linux/arm64/Cursor-0.50.3-aarch64.AppImage",
         "checksum": "7ae22cf8cd5af9e08b62585dd03d10f5f610acf9"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.50.2": {
     "date": "2025-05-13",
@@ -676,8 +671,7 @@
         "url": "https://downloads.cursor.com/production/fc3e38722d374aeba23729a31220a4f0662e3c9b/linux/arm64/Cursor-0.50.2-aarch64.AppImage",
         "checksum": "fc3e38722d374aeba23729a31220a4f0662e3c9b"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.50.1": {
     "date": "2025-05-11",
@@ -710,8 +704,7 @@
         "url": "https://downloads.cursor.com/production/81bf18c2ba01d6e7e886875bdb6d1d04ac31c1f7/linux/arm64/Cursor-0.50.1-aarch64.AppImage",
         "checksum": "81bf18c2ba01d6e7e886875bdb6d1d04ac31c1f7"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.50.0": {
     "date": "2025-05-09",
@@ -744,8 +737,7 @@
         "url": "https://downloads.cursor.com/production/bbfa51c1211255cbbde8b558e014a593f44051f4/linux/arm64/Cursor-0.50.0-aarch64.AppImage",
         "checksum": "bbfa51c1211255cbbde8b558e014a593f44051f4"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.49.6": {
     "date": "2025-04-25",
@@ -778,8 +770,7 @@
         "url": "https://downloads.cursor.com/production/0781e811de386a0c5bcb07ceb259df8ff8246a52/linux/arm64/Cursor-0.49.6-aarch64.AppImage",
         "checksum": "0781e811de386a0c5bcb07ceb259df8ff8246a52"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.49.5": {
     "date": "2025-04-24",
@@ -812,8 +803,7 @@
         "url": "https://downloads.cursor.com/production/fd861c8a80c0f9e4e35294b1915ee8a7b29ae858/linux/arm64/Cursor-0.49.5-aarch64.AppImage",
         "checksum": "fd861c8a80c0f9e4e35294b1915ee8a7b29ae858"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.49.4": {
     "date": "2025-04-22",
@@ -846,8 +836,7 @@
         "url": "https://downloads.cursor.com/production/ec408037b24566b11e6132c58bbe6ad27046eb91/linux/arm64/Cursor-0.49.4-aarch64.AppImage",
         "checksum": "ec408037b24566b11e6132c58bbe6ad27046eb91"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.49.3": {
     "date": "2025-04-21",
@@ -880,8 +869,7 @@
         "url": "https://downloads.cursor.com/production/224bc1da1a36703c583d62e407d4bccbb8c6a641/linux/arm64/Cursor-0.49.3-aarch64.AppImage",
         "checksum": "224bc1da1a36703c583d62e407d4bccbb8c6a641"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.49.2": {
     "date": "2025-04-19",
@@ -914,8 +902,7 @@
         "url": "https://downloads.cursor.com/production/1d0a7a3b734be5aea27e30d0c56d2a6e2c79da74/linux/arm64/Cursor-0.49.2-aarch64.AppImage",
         "checksum": "1d0a7a3b734be5aea27e30d0c56d2a6e2c79da74"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.49.1": {
     "date": "2025-04-17",
@@ -948,8 +935,7 @@
         "url": "https://downloads.cursor.com/production/4c8fb291b08c52a5d2fee1b4463620092c4ed7ca/linux/arm64/Cursor-0.49.1-aarch64.AppImage",
         "checksum": "4c8fb291b08c52a5d2fee1b4463620092c4ed7ca"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.49.0": {
     "date": "2025-04-16",
@@ -982,8 +968,7 @@
         "url": "https://downloads.cursor.com/production/88a47f0edd42a2ba73afb018ada9fe9eda7df75f/linux/arm64/Cursor-0.49.0-aarch64.AppImage",
         "checksum": "88a47f0edd42a2ba73afb018ada9fe9eda7df75f"
       }
-    },
-    "changelog": "N/A"
+    }
   },
   "0.48.9": {
     "date": "2025-04-13",
@@ -1085,7 +1070,7 @@
         "checksum": "1d623c4cc1d3bb6e0fe4f1d5434b47b958b05876"
       }
     },
-    "changelog": "Fixes an issue where some chats could get deleted on update"
+    "changelog": " Fixes an issue where some chats could get deleted on update"
   },
   "0.48.6": {
     "date": "2025-03-31",
