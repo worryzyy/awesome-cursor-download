@@ -21,6 +21,14 @@
       "linux_arm64": {
         "url": "https://downloads.cursor.com/production/43090fc55ee2f0081ba84ba373ff3125a1f14f51/linux/arm64/Cursor-1.5.1-aarch64.AppImage",
         "checksum": "43090fc55ee2f0081ba84ba373ff3125a1f14f51"
+      },
+      "windows": {
+        "url": "https://downloads.cursor.com/production/43090fc55ee2f0081ba84ba373ff3125a1f14f51/win32/x64/system-setup/CursorSetup-x64-1.5.1.exe",
+        "checksum": "43090fc55ee2f0081ba84ba373ff3125a1f14f51"
+      },
+      "windows_arm64": {
+        "url": "https://downloads.cursor.com/production/43090fc55ee2f0081ba84ba373ff3125a1f14f51/win32/arm64/system-setup/CursorSetup-arm64-1.5.1.exe",
+        "checksum": "43090fc55ee2f0081ba84ba373ff3125a1f14f51"
       }
     },
     "changelog": "N/A"
