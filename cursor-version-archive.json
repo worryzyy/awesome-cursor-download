@@ -25,6 +25,10 @@
       "linux_arm64": {
         "url": "https://downloads.cursor.com/production/6eed2e036b92b60f0cef5b52a2e1b99f3358bca3/linux/arm64/Cursor-1.5.6-aarch64.AppImage",
         "checksum": "6eed2e036b92b60f0cef5b52a2e1b99f3358bca3"
+      },
+      "linux": {
+        "url": "https://downloads.cursor.com/production/6eed2e036b92b60f0cef5b52a2e1b99f3358bca3/linux/x64/Cursor-1.5.6-x86_64.AppImage",
+        "checksum": "6eed2e036b92b60f0cef5b52a2e1b99f3358bca3"
       }
     },
     "changelog": "N/A"
