@@ -59,15 +59,15 @@ Below are the official download links for various versions of Cursor AI, present
 <!-- LATEST_VERSION_CARD_START -->
 <div align="center">
 <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-<h1 style="text-align: center; margin-bottom: 0;">🚀 Cursor 2.0.77</h1>
-<p style="text-align: center; color: #666; margin-top: 10px; margin-bottom: 20px;">Release Date: 2025-11-14</p>
+<h1 style="text-align: center; margin-bottom: 0;">🚀 Cursor 2.1.6</h1>
+<p style="text-align: center; color: #666; margin-top: 10px; margin-bottom: 20px;">Release Date: 2025-11-20</p>
 
 | Windows | macOS | Linux |
 |:---:|:---:|:---:|
 | ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
-| [x64 Download](https://downloads.cursor.com/production/ba90f2f88e4911312761abab9492c42442117cfe/win32/x64/system-setup/CursorSetup-x64-2.0.77.exe) | [Universal Download](https://downloads.cursor.com/production/ba90f2f88e4911312761abab9492c42442117cfe/darwin/universal/Cursor-darwin-universal.dmg) | [x64 Download](https://downloads.cursor.com/production/ba90f2f88e4911312761abab9492c42442117cfe/linux/x64/Cursor-2.0.77-x86_64.AppImage) |
-| [ARM64 Download](https://downloads.cursor.com/production/ba90f2f88e4911312761abab9492c42442117cfe/win32/arm64/system-setup/CursorSetup-arm64-2.0.77.exe) | [Intel Download](https://downloads.cursor.com/production/ba90f2f88e4911312761abab9492c42442117cfe/darwin/x64/Cursor-darwin-x64.dmg) | [ARM64 Download](https://downloads.cursor.com/production/ba90f2f88e4911312761abab9492c42442117cfe/linux/arm64/Cursor-2.0.77-aarch64.AppImage) |
-|  | [M_Chip Download](https://downloads.cursor.com/production/ba90f2f88e4911312761abab9492c42442117cfe/darwin/arm64/Cursor-darwin-arm64.dmg) |  |
+| [x64 Download](https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/win32/x64/system-setup/CursorSetup-x64-2.1.6.exe) | [Universal Download](https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/darwin/universal/Cursor-darwin-universal.dmg) | [x64 Download](https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/linux/x64/Cursor-2.1.6-x86_64.AppImage) |
+| [ARM64 Download](https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/win32/arm64/system-setup/CursorSetup-arm64-2.1.6.exe) | [Intel Download](https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/darwin/x64/Cursor-darwin-x64.dmg) | [ARM64 Download](https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/linux/arm64/Cursor-2.1.6-aarch64.AppImage) |
+|  | [M_Chip Download](https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/darwin/arm64/Cursor-darwin-arm64.dmg) |  |
 
 </div>
 </div>
@@ -87,6 +87,14 @@ Below are the official download links for various versions of Cursor AI, present
     <th style="text-align: left; vertical-align: middle; padding: 10px;">Changelog</th>
   </tr>
   <tr style="background-color: #f0f8ff;">
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2.1.6</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-11-20</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/win32/x64/system-setup/CursorSetup-x64-2.1.6.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/win32/arm64/system-setup/CursorSetup-arm64-2.1.6.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/linux/x64/Cursor-2.1.6-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/linux/arm64/Cursor-2.1.6-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">N/A</td>
+    </tr>
+  <tr>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">2.0.77</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">2025-11-14</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/ba90f2f88e4911312761abab9492c42442117cfe/win32/x64/system-setup/CursorSetup-x64-2.0.77.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/ba90f2f88e4911312761abab9492c42442117cfe/win32/arm64/system-setup/CursorSetup-arm64-2.0.77.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
@@ -1653,6 +1661,28 @@ Below are the official download links for various versions of Cursor AI, present
 ## Detailed Version Card View
 
 <!-- DETAILED_CARDS_START -->
+
+<details>
+<summary><b>Version 2.1.6</b> (2025-11-20)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 2.1.6 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/win32/x64/system-setup/CursorSetup-x64-2.1.6.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/win32/arm64/system-setup/CursorSetup-arm64-2.1.6.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/linux/x64/Cursor-2.1.6-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/92340560ea81cb6168e2027596519d68af6c90a1/linux/arm64/Cursor-2.1.6-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
 
 <details>
 <summary><b>Version 2.0.77</b> (2025-11-14)</summary>
