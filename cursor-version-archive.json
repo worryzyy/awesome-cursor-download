@@ -1,4 +1,38 @@
 {
+  "2.3.9": {
+    "date": "2025-12-28",
+    "platforms": {
+      "windows": {
+        "url": "https://downloads.cursor.com/production/eecab7538820b6470389330d2cca30b703322294/win32/x64/system-setup/CursorSetup-x64-2.3.9.exe",
+        "checksum": "eecab7538820b6470389330d2cca30b703322294"
+      },
+      "windows_arm64": {
+        "url": "https://downloads.cursor.com/production/eecab7538820b6470389330d2cca30b703322294/win32/arm64/system-setup/CursorSetup-arm64-2.3.9.exe",
+        "checksum": "eecab7538820b6470389330d2cca30b703322294"
+      },
+      "mac": {
+        "url": "https://downloads.cursor.com/production/eecab7538820b6470389330d2cca30b703322294/darwin/universal/Cursor-darwin-universal.dmg",
+        "checksum": "eecab7538820b6470389330d2cca30b703322294"
+      },
+      "mac_intel": {
+        "url": "https://downloads.cursor.com/production/eecab7538820b6470389330d2cca30b703322294/darwin/x64/Cursor-darwin-x64.dmg",
+        "checksum": "eecab7538820b6470389330d2cca30b703322294"
+      },
+      "mac_arm64": {
+        "url": "https://downloads.cursor.com/production/eecab7538820b6470389330d2cca30b703322294/darwin/arm64/Cursor-darwin-arm64.dmg",
+        "checksum": "eecab7538820b6470389330d2cca30b703322294"
+      },
+      "linux": {
+        "url": "https://downloads.cursor.com/production/eecab7538820b6470389330d2cca30b703322294/linux/x64/Cursor-2.3.9-x86_64.AppImage",
+        "checksum": "eecab7538820b6470389330d2cca30b703322294"
+      },
+      "linux_arm64": {
+        "url": "https://downloads.cursor.com/production/eecab7538820b6470389330d2cca30b703322294/linux/arm64/Cursor-2.3.9-aarch64.AppImage",
+        "checksum": "eecab7538820b6470389330d2cca30b703322294"
+      }
+    },
+    "changelog": "N/A"
+  },
   "2.3.8": {
     "date": "2025-12-27",
     "platforms": {
