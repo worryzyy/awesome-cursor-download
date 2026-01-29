@@ -59,15 +59,15 @@ npm run update
 <!-- LATEST_VERSION_CARD_START -->
 <div align="center">
 <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-<h1 style="text-align: center; margin-bottom: 0;">🚀 Cursor 2.4.22</h1>
-<p style="text-align: center; color: #666; margin-top: 10px; margin-bottom: 20px;">发布日期: 2026-01-27</p>
+<h1 style="text-align: center; margin-bottom: 0;">🚀 Cursor 2.4.23</h1>
+<p style="text-align: center; color: #666; margin-top: 10px; margin-bottom: 20px;">发布日期: 2026-01-29</p>
 
 | Windows | macOS | Linux |
 |:---:|:---:|:---:|
 | ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
-| [x64 下载](https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/win32/x64/system-setup/CursorSetup-x64-2.4.22.exe) | [通用版 下载](https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/darwin/universal/Cursor-darwin-universal.dmg) | [x64 下载](https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/linux/x64/Cursor-2.4.22-x86_64.AppImage) |
-| [ARM64 下载](https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/win32/arm64/system-setup/CursorSetup-arm64-2.4.22.exe) | [Intel 下载](https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/darwin/x64/Cursor-darwin-x64.dmg) | [ARM64 下载](https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/linux/arm64/Cursor-2.4.22-aarch64.AppImage) |
-|  | [M芯片 下载](https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/darwin/arm64/Cursor-darwin-arm64.dmg) |  |
+| [x64 下载](https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/win32/x64/system-setup/CursorSetup-x64-2.4.23.exe) | [通用版 下载](https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/darwin/universal/Cursor-darwin-universal.dmg) | [x64 下载](https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/linux/x64/Cursor-2.4.23-x86_64.AppImage) |
+| [ARM64 下载](https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/win32/arm64/system-setup/CursorSetup-arm64-2.4.23.exe) | [Intel 下载](https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/darwin/x64/Cursor-darwin-x64.dmg) | [ARM64 下载](https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/linux/arm64/Cursor-2.4.23-aarch64.AppImage) |
+|  | [M芯片 下载](https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/darwin/arm64/Cursor-darwin-arm64.dmg) |  |
 
 </div>
 </div>
@@ -87,6 +87,14 @@ npm run update
     <th style="text-align: left; vertical-align: middle; padding: 10px;">更新日志</th>
   </tr>
   <tr style="background-color: #f0f8ff;">
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2.4.23</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2026-01-29</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/win32/x64/system-setup/CursorSetup-x64-2.4.23.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/win32/arm64/system-setup/CursorSetup-arm64-2.4.23.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/通用-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M芯片-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/linux/x64/Cursor-2.4.23-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a> <a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/linux/arm64/Cursor-2.4.23-aarch64.AppImage"><img src="https://img.shields.io/badge/ARM64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux ARM64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">N/A</td>
+    </tr>
+  <tr>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">2.4.22</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">2026-01-27</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/win32/x64/system-setup/CursorSetup-x64-2.4.22.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/win32/arm64/system-setup/CursorSetup-arm64-2.4.22.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
@@ -2117,6 +2125,28 @@ npm run update
 ## 详细版本卡片视图
 
 <!-- DETAILED_CARDS_START -->
+
+<details>
+<summary><b>版本 2.4.23</b> (2026-01-29)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 2.4.23 下载链接</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/win32/x64/system-setup/CursorSetup-x64-2.4.23.exe"><img src="https://img.shields.io/badge/Windows_x64-下载-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/win32/arm64/system-setup/CursorSetup-arm64-2.4.23.exe"><img src="https://img.shields.io/badge/Windows_ARM64-下载-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_通用-下载-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-下载-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M芯片-下载-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/linux/x64/Cursor-2.4.23-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-下载-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+<a href="https://downloads.cursor.com/production/379934e04d2b3290cf7aefa14560f942e4212925/linux/arm64/Cursor-2.4.23-aarch64.AppImage"><img src="https://img.shields.io/badge/Linux_ARM64-下载-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux ARM64"></a>
+
+</div>
+</details>
 
 <details>
 <summary><b>版本 2.4.22</b> (2026-01-27)</summary>
