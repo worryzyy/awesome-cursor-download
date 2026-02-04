@@ -1,4 +1,26 @@
 {
+  "2.4.28": {
+    "date": "2026-02-04",
+    "platforms": {
+      "windows": {
+        "url": "https://downloads.cursor.com/production/f3f5cec40024283013878b50c4f9be4002e0b587/win32/x64/system-setup/CursorSetup-x64-2.4.28.exe",
+        "checksum": "f3f5cec40024283013878b50c4f9be4002e0b587"
+      },
+      "windows_arm64": {
+        "url": "https://downloads.cursor.com/production/f3f5cec40024283013878b50c4f9be4002e0b587/win32/arm64/system-setup/CursorSetup-arm64-2.4.28.exe",
+        "checksum": "f3f5cec40024283013878b50c4f9be4002e0b587"
+      },
+      "linux": {
+        "url": "https://downloads.cursor.com/production/f3f5cec40024283013878b50c4f9be4002e0b587/linux/x64/Cursor-2.4.28-x86_64.AppImage",
+        "checksum": "f3f5cec40024283013878b50c4f9be4002e0b587"
+      },
+      "linux_arm64": {
+        "url": "https://downloads.cursor.com/production/f3f5cec40024283013878b50c4f9be4002e0b587/linux/arm64/Cursor-2.4.28-aarch64.AppImage",
+        "checksum": "f3f5cec40024283013878b50c4f9be4002e0b587"
+      }
+    },
+    "changelog": "N/A"
+  },
   "2.4.27": {
     "date": "2026-02-01",
     "platforms": {
