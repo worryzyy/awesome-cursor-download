@@ -59,15 +59,15 @@ Below are the official download links for various versions of Cursor AI, present
 <!-- LATEST_VERSION_CARD_START -->
 <div align="center">
 <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-<h1 style="text-align: center; margin-bottom: 0;">🚀 Cursor 3.3.30</h1>
-<p style="text-align: center; color: #666; margin-top: 10px; margin-bottom: 20px;">Release Date: 2026-05-09</p>
+<h1 style="text-align: center; margin-bottom: 0;">🚀 Cursor 3.4.13</h1>
+<p style="text-align: center; color: #666; margin-top: 10px; margin-bottom: 20px;">Release Date: 2026-05-13</p>
 
 | Windows | macOS | Linux |
 |:---:|:---:|:---:|
 | ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) | ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
-| [x64 Download](https://downloads.cursor.com/production/3dc559280adc5f931ade8e25c7b85393842acf34/win32/x64/system-setup/CursorSetup-x64-3.3.30.exe) | [Universal Download](https://downloads.cursor.com/production/3dc559280adc5f931ade8e25c7b85393842acf34/darwin/universal/Cursor-darwin-universal.dmg) | [x64 Download](https://downloads.cursor.com/production/3dc559280adc5f931ade8e25c7b85393842acf34/linux/x64/Cursor-3.3.30-x86_64.AppImage) |
-| [ARM64 Download](https://downloads.cursor.com/production/3dc559280adc5f931ade8e25c7b85393842acf34/win32/arm64/system-setup/CursorSetup-arm64-3.3.30.exe) | [Intel Download](https://downloads.cursor.com/production/3dc559280adc5f931ade8e25c7b85393842acf34/darwin/x64/Cursor-darwin-x64.dmg) | [ARM64 Download](https://downloads.cursor.com/production/3dc559280adc5f931ade8e25c7b85393842acf34/linux/arm64/Cursor-3.3.30-aarch64.AppImage) |
-|  | [M_Chip Download](https://downloads.cursor.com/production/3dc559280adc5f931ade8e25c7b85393842acf34/darwin/arm64/Cursor-darwin-arm64.dmg) |  |
+| [x64 Download](https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/win32/x64/system-setup/CursorSetup-x64-3.4.13.exe) | [Universal Download](https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/darwin/universal/Cursor-darwin-universal.dmg) | [x64 Download](https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/linux/x64/Cursor-3.4.13-x86_64.AppImage) |
+| [ARM64 Download](https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/win32/arm64/system-setup/CursorSetup-arm64-3.4.13.exe) | [Intel Download](https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/darwin/x64/Cursor-darwin-x64.dmg) |  |
+|  | [M_Chip Download](https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/darwin/arm64/Cursor-darwin-arm64.dmg) |  |
 
 </div>
 </div>
@@ -87,6 +87,14 @@ Below are the official download links for various versions of Cursor AI, present
     <th style="text-align: left; vertical-align: middle; padding: 10px;">Changelog</th>
   </tr>
   <tr style="background-color: #f0f8ff;">
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">3.4.13</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;">2026-05-13</td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/win32/x64/system-setup/CursorSetup-x64-3.4.13.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/win32/arm64/system-setup/CursorSetup-arm64-3.4.13.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/Universal-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Universal"></a> <a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/Intel-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS Intel"></a> <a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/M_Chip-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a></td>
+      <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/linux/x64/Cursor-3.4.13-x86_64.AppImage"><img src="https://img.shields.io/badge/x64-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux x64"></a></td>
+      <td style="text-align: left; vertical-align: middle; padding: 10px;">N/A</td>
+    </tr>
+  <tr>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">3.3.30</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;">2026-05-09</td>
       <td style="text-align: center; vertical-align: middle; padding: 10px;"><a href="https://downloads.cursor.com/production/3dc559280adc5f931ade8e25c7b85393842acf34/win32/x64/system-setup/CursorSetup-x64-3.3.30.exe"><img src="https://img.shields.io/badge/x64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows x64"></a> <a href="https://downloads.cursor.com/production/3dc559280adc5f931ade8e25c7b85393842acf34/win32/arm64/system-setup/CursorSetup-arm64-3.3.30.exe"><img src="https://img.shields.io/badge/ARM64-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows ARM64"></a></td>
@@ -2437,6 +2445,27 @@ Below are the official download links for various versions of Cursor AI, present
 ## Detailed Version Card View
 
 <!-- DETAILED_CARDS_START -->
+
+<details>
+<summary><b>Version 3.4.13</b> (2026-05-13)</summary>
+
+<div align="center" style="padding: 20px; margin: 10px 0; border-radius: 5px; background-color: #f8f9fa;">
+<h3>Cursor 3.4.13 Download Links</h3>
+
+#### Windows
+<a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/win32/x64/system-setup/CursorSetup-x64-3.4.13.exe"><img src="https://img.shields.io/badge/Windows_x64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows x64"></a>
+<a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/win32/arm64/system-setup/CursorSetup-arm64-3.4.13.exe"><img src="https://img.shields.io/badge/Windows_ARM64-Download-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows ARM64"></a>
+
+#### macOS
+<a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/darwin/universal/Cursor-darwin-universal.dmg"><img src="https://img.shields.io/badge/macOS_Universal-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Universal"></a>
+<a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/darwin/x64/Cursor-darwin-x64.dmg"><img src="https://img.shields.io/badge/macOS_Intel-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS Intel"></a>
+<a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/darwin/arm64/Cursor-darwin-arm64.dmg"><img src="https://img.shields.io/badge/macOS_M_Chip-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="macOS M1/M2/M3"></a>
+
+#### Linux
+<a href="https://downloads.cursor.com/production/e8e175702dcdf6cb24df72c1e94133748d0c5e86/linux/x64/Cursor-3.4.13-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux_x64-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux x64"></a>
+
+</div>
+</details>
 
 <details>
 <summary><b>Version 3.3.30</b> (2026-05-09)</summary>
