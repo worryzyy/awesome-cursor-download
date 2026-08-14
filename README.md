@@ -14,6 +14,8 @@ This project is a download link tracker for Cursor AI, implemented in Node.js. I
 
 ## Features
 
+- [Clickyy](https://github.com/jayamitkatariya/clickyyy) - Shake your cursor to summon an AI agent that sees your screen and clicks, types, drags, and acts for you on macOS. Open-source, MIT.
+
 - Automatically fetches latest download links for Cursor AI editor across different platforms (Windows, Mac, Linux) and architectures (x64, arm64, etc.)
 - Maintains a history of download links for all versions
 - Automatically updates the download link tables
